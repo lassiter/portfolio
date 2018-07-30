@@ -1,74 +1,53 @@
 import React from 'react'
-import CardList from '../components/CardList'
-import Card from '../components/Card'
+import ProjectCardList from '../components/ProjectCardList'
+import ProjectCard from '../components/ProjectCard'
 import Container from '../components/Container'
-import PageTitle from '../components/PageTitle'
+// import PageTitle from '../components/PageTitle'
 import SEO from '../components/SEO'
 
 const Index = ({ data }) => {
-  const posts = data.allContentfulPost.edges
-  console.log(data)
+  const projects = data.allContentfulProject.edges
+  console.log(projects)
   return (
     <div>
       <SEO />
       <Container>
-        <PageTitle small>
-          <a
-            href="https://www.gatsbyjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Gatsby
-          </a>,{' '}
-          <a
-            href="https://www.contentful.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Contentful
-          </a>{' '}
-          and{' '}
-          <a
-            href="https://www.netlify.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Netlify
-          </a>{' '}
-          <span>🎉</span>
-        </PageTitle>
-        <CardList>
-          {posts.map(({ node: post }) => (
-            <Card
-              key={post.id}
-              slug={post.slug}
-              image={post.heroImage}
-              title={post.title}
-              date={post.publishDate}
-              excerpt={post.body}
+        <ProjectCardList>
+          {projects.map(({ node: project }) => (
+            <ProjectCard
+              key={project.id}
+              slug={project.slug}
+              image={project.heroImage}
+              title={project.title}
+              subtitle={project.subtitle}
+              date={project.publishDate}
+              excerpt={project.body}
             />
           ))}
-        </CardList>
+        </ProjectCardList>
       </Container>
     </div>
   )
 }
 
 export const query = graphql`
-  query projectIndexQuery {
+query projectIndexQuery {
     allContentfulProject(
       limit: 1000
-      sort: { fields: [publishDate], order: DESC }
+      sort: { fields: [feature], order: DESC }
     ) {
       edges {
         node {
-          title
+					feature
           id
           slug
-          publishDate(formatString: "MMMM DD, YYYY")
+          title
+          subtitle
+          publishDate(formatString: "MMMM YYYY")
+
           heroImage {
             title
-            sizes(maxWidth: 1800) {
+            sizes(maxWidth: 800, maxHeight: 533) {
               ...GatsbyContentfulSizes_withWebp_noBase64
             }
           }

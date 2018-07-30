@@ -6,6 +6,10 @@ const Wrapper = styled.div`
   position: relative;
   min-height: 300px;
 `
+const List = styled.li`
+  position: relative;
+  min-height: 300px;
+`
 const MediaItem = styled(Img)`
   position: absolute;
   top: 0;
@@ -36,13 +40,17 @@ const MediaItem = styled(Img)`
 `
 
 const ProjectMedia = props => (
-  <Wrapper>
-    <MediaItem
-      height={props.height}
-      sizes={props.image.sizes}
-      backgroundColor={'#eeeeee'}
+  <List>
+    {console.log(props.media)}
+    {props.media.map(media => (
+
+    <MediaItem 
+      key={media.id}
+      sizes ={ media.sizes }
+      title = { media.title }
     />
-  </Wrapper>
+    ))}
+  </List>
 )
 
 export default ProjectMedia

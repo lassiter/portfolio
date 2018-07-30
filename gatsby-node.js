@@ -28,6 +28,31 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     })
   })
 
+  const loadProjects = new Promise((resolve, reject) => {
+    graphql(`
+      {
+        allContentfulProject {
+          edges {
+            node {
+              slug
+            }
+          }
+        }
+      }
+    `).then(result => {
+        result.data.allContentfulProject.edges.map(({ node }) => {
+          createPage({
+            path: `${node.slug}/`,
+            component: path.resolve(`./src/templates/project.js`),
+            context: {
+              slug: node.slug,
+            },
+          })
+        })
+        resolve()
+      })
+  })
+
   const loadPages = new Promise((resolve, reject) => {
     graphql(`
       {
@@ -78,5 +103,5 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     })
   })
 
-  return Promise.all([loadPosts, loadPages, loadTags])
+  return Promise.all([loadPosts, loadProjects, loadPages, loadTags])
 }

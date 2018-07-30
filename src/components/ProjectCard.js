@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 
-const Post = styled.li`
+const Project = styled.li`
   border: 1px solid ${props => props.theme.colors.secondary};
   border-radius: 2px;
   margin: 0 0 1em 0;
@@ -39,8 +39,14 @@ const Title = styled.h2`
   text-transform: capitalize;
   margin: 1rem 1rem 0.5rem 1rem;
 `
+const Subtitle = styled.h4`
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 1rem 1rem 0.5rem 1rem;
+`
 
-const Date = styled.h3`
+const Date = styled.div`
   margin: 0 1rem 1.5rem 1rem;
   color: gray;
 `
@@ -52,18 +58,19 @@ const Excerpt = styled.p`
 
 const Card = props => {
   return (
-    <Post>
+    <Project>
       <Link to={`/${props.slug}/`}>
-        <Img sizes={props.image.sizes} backgroundColor={'#eeeeee'} />
-        <Title>{props.title}</Title>
         <Date>{props.date}</Date>
-        <Excerpt
-          dangerouslySetInnerHTML={{
-            __html: props.excerpt.childMarkdownRemark.excerpt,
-          }}
-        />
+        <Img sizes={props.image.sizes} backgroundColor={'#eeeeee'} />
       </Link>
-    </Post>
+      <Excerpt
+        dangerouslySetInnerHTML={{
+          __html: props.excerpt.childMarkdownRemark.excerpt,
+        }}
+      />
+      <Subtitle>{props.subtitle}</Subtitle>
+      <Title>{props.title}</Title>
+    </Project>
   )
 }
 

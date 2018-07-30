@@ -2,26 +2,27 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import config from '../utils/siteConfig'
 import Container from '../components/Container'
+import ProjectInfo from '../components/ProjectInfo'
+import ProjectMedia from '../components/ProjectMedia'
 import PageBody from '../components/PageBody'
 import SEO from '../components/SEO'
 
-const PostTemplate = ({ data }) => {
+const ProjectTemplate = ({ data }) => {
   const {
     title,
     slug,
-    id,
     projectMedia,
     body,
     tags
-  } = data.contentfulPost
-  const postNode = data.contentfulPost
+  } = data.contentfulProject
+  const projectNode = data.contentfulProject
 
   return (
     <div>
       <Helmet>
         <title>{`${title} - ${config.siteTitle}`}</title>
       </Helmet>
-      <SEO pagePath={slug} postNode={postNode} postSEO />
+      <SEO pagePath={slug} projectNode={projectNode} projectSEO />
 
       <Container>
         <ProjectInfo title={title} tags={tags} />
@@ -51,9 +52,17 @@ query projectQuery($slug: String!) {
 			}
       requirements	
       results
+      projectMedia {
+        id
+        title
+        description
+        sizes(maxWidth: 800, maxHeight: 525) {
+          ...GatsbyContentfulSizes_withWebp_noBase64
+        }
+    }
 	}
 }
 `
 // TODO: Figure out why contentful/graphql won't query Meta Description or Project Media
 
-export default PostTemplate
+export default ProjectTemplate
