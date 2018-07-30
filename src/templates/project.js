@@ -12,7 +12,7 @@ const PostTemplate = ({ data }) => {
     id,
     projectMedia,
     body,
-    tags,
+    tags
   } = data.contentfulPost
   const postNode = data.contentfulPost
 
@@ -33,58 +33,27 @@ const PostTemplate = ({ data }) => {
 }
 
 export const query = graphql`
-  query projectQuery($slug: String!) {
-    contentfulProject(slug: { eq: $slug }) {
-      title
+query projectQuery($slug: String!) {
+  contentfulProject(slug: { eq: $slug }) {
       id
+    	publishDate
+    	title
       slug
-      metaDescription {
-        internal {
-          content
-        }
-      }
-      publishDate(formatString: "MMMM DD, YYYY")
-      publishDateISO: publishDate(formatString: "YYYY-MM-DD")
-      tags {
-        title
+			tags {
+				title
         id
         slug
-      }
-      heroImage {
-        title
-        sizes(maxWidth: 1800) {
-          ...GatsbyContentfulSizes_withWebp_noBase64
-        }
-        ogimg: resize(width: 1800) {
-          src
-          width
-          height
-        }
-      }
-      body {
-        childMarkdownRemark {
-          html
-          excerpt(pruneLength: 320)
-        }
-      }
-    }
-    allContentfulProject(
-      limit: 1000
-      sort: { fields: [publishDate], order: DESC }
-    ) {
-      edges {
-        node {
-          id
-        }
-        previous {
-          slug
-        }
-        next {
-          slug
-        }
-      }
-    }
-  }
+			}
+    	body {
+			  childMarkdownRemark {
+			    html
+			  }
+			}
+      requirements	
+      results
+	}
+}
 `
+// TODO: Figure out why contentful/graphql won't query Meta Description or Project Media
 
 export default PostTemplate
