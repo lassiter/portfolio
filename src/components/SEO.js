@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Helmet from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/react-helmet'
+import Helmet from 'react-helmet'
 import config from '../utils/siteConfig'
 
 class SEO extends Component {
