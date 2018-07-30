@@ -64,11 +64,23 @@ module.exports = {
           ? contentfulConfig.development
           : contentfulConfig.production,
     },
-    {
-      resolve: 'gatsby-plugin-google-analytics',
+     {
+      resolve: `gatsby-plugin-segment-js`,
       options: {
-        trackingId: process.env.GOOGLE_ANALYTICS,
-        head: true,
+          // your segment write key for your production environment
+          // when process.env.NODE_ENV === 'production'
+          // required; non-empty string
+          prodKey: process.env.SEGMENT_PRODUCTION_WRITE_KEY,
+
+          // if you have a development env for your segment account, paste that key here
+          // when process.env.NODE_ENV === 'development'
+          // optional; non-empty string
+          devKey: process.env.SEGMENT_DEV_WRITE_KEY,
+
+          // whether you want to include analytics.page()
+          // optional; boolean that defaults to true
+          // if false, then don't forget to manually add it to your codebase manually!
+          trackPage: true
       },
     },
     'gatsby-plugin-sitemap',
