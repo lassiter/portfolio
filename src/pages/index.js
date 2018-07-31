@@ -5,7 +5,6 @@ import SEO from '../components/SEO'
 
 const Index = ({ data }) => {
   const person = data.contentfulPerson
-  console.log(data)
   return (
     <div>
       <SEO />
@@ -25,6 +24,7 @@ query introQuery {
   contentfulPerson(name: { eq: "Lassiter Gregg" }) {
       id
     	image {
+        id
         title
     	  sizes(maxWidth: 900) {
           ...GatsbyContentfulSizes_withWebp_noBase64

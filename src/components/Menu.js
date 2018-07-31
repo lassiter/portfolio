@@ -3,7 +3,6 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 const Header = styled.header`
-  background: ${props => props.theme.colors.base};
   width: 100%;
   padding: 1.5em 0;
 `
@@ -25,23 +24,25 @@ const Nav = styled.nav`
       position: relative;
       margin: 0;
       flex-basis: 100%;
+      & > a {
+        font-size: 60px;
+      }
     }
   }
 
   a {
     text-decoration: none;
-    color: DarkGray;
+    color: ${props => props.theme.colors.base};
     font-weight: 600;
     transition: all 0.2s;
-    border-bottom: 2px solid ${props => props.theme.colors.base};
     &:hover {
-      color: white;
+      color: ${props => props.theme.colors.secondary};
     }
   }
 `
 
 const activeLinkStyle = {
-  color: 'white',
+  color: `${props => props.theme.colors.tertiary}`
 }
 
 const Menu = () => {
@@ -51,17 +52,22 @@ const Menu = () => {
         <ul>
           <li>
             <Link to="/" exact activeStyle={activeLinkStyle}>
-              Home
+              L/
+            </Link>
+          </li>
+          <li>
+            <Link to="/projects/" activeStyle={activeLinkStyle}>
+              PROJECTS
+            </Link>
+          </li>
+          <li>
+            <Link to="/posts/" activeStyle={activeLinkStyle}>
+              BLOG
             </Link>
           </li>
           <li>
             <Link to="/about/" activeStyle={activeLinkStyle}>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact/" activeStyle={activeLinkStyle}>
-              Contact
+              ABOUT
             </Link>
           </li>
         </ul>

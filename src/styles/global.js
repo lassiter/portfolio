@@ -17,13 +17,14 @@ injectGlobal`
   article, aside, canvas, details, embed,
   figure, figcaption, footer, header, hgroup,
   menu, nav, output, ruby, section, summary,
-  time, mark, audio, video {
+  time, mark, audio, video, {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    
   }
 
   /* Added to Fix Footer to bottom of viewport */
@@ -40,6 +41,8 @@ injectGlobal`
   }
   footer {
     width: 100%;
+    postion: fixed;
+    bottom: 0px;
   }
 
   /* End Fix to Place Footer on Bottom of Viewport */
@@ -77,17 +80,18 @@ injectGlobal`
 
   * {
     box-sizing: border-box;
+    border-image-width: 0;
   }
 
   body {
-    background: white;
+    background: transparent;
     line-height: 1;
     font-size: 100%;
     font-variant-ligatures: none;
     text-rendering: optimizeLegibility;
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
     font-weight: 400;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: Open Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
   }
 
   img {
@@ -95,4 +99,15 @@ injectGlobal`
   	width: 100%;
   	height: auto;
   }
+
+  html {
+    background-color: #fff;
+    background-size: 15px 15px, 15px 15px;
+    background-position: -1px -1px, -1px -1px;
+    background-image: linear-gradient(lightblue 1px, transparent 1px),
+                      linear-gradient(90deg, lightblue 1px, transparent 1px),
+                      linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+  }
+
 `

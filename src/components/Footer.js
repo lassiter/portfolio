@@ -2,11 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.footer`
+  height: 45px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 0 auto;
+  margin: 0 0 auto;
   max-width: ${props => props.theme.sizes.maxWidth};
 `
 
@@ -16,14 +17,12 @@ const List = styled.ul`
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  border-top: 1px solid ${props => props.theme.colors.secondary};
-  padding: 1em 0 2em;
-  margin: 0 1.5em;
+  margin: 1em 0 3.5em;
 `
 
 const Item = styled.li`
   display: inline-block;
-  padding: 0.25em 0;
+  margin: 0.25em 0;
   width: 100%;
   @media screen and (min-width: ${props => props.theme.responsive.small}) {
     width: auto;
