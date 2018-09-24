@@ -7,21 +7,22 @@ import SEO from '../components/SEO'
 
 const Index = ({ data }) => {
   const projects = data.allContentfulProject.edges
-  console.log(projects)
+  
   return (
     <div>
+      {projects.map((p) => (console.log(p.node)))}
       <SEO />
       <Container>
         <ProjectCardList>
-          {projects.map(({ node: project }) => (
+          {projects.map((project) => (
             <ProjectCard
-              key={project.id}
-              slug={project.slug}
-              image={project.heroImage}
-              title={project.title}
-              subtitle={project.subtitle}
-              date={project.publishDate}
-              excerpt={project.body}
+              key={project.node.id}
+              slug={project.node.slug}
+              image={project.node.heroImage}
+              title={project.node.title}
+              subtitle={project.node.subtitle}
+              date={project.node.publishDate}
+              excerpt={project.node.body}
             />
           ))}
         </ProjectCardList>

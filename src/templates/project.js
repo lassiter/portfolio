@@ -17,6 +17,23 @@ const ProjectTemplate = ({ data }) => {
   } = data.contentfulProject
   const projectNode = data.contentfulProject
 
+  // Alternate View, if projectMedia does not exists
+  if (projectMedia == null) {
+    return (
+      <div>
+        <Helmet>
+          <title>{`${title} - ${config.siteTitle}`}</title>
+        </Helmet>
+        <SEO pagePath={slug} projectNode={projectNode} projectSEO />
+
+        <Container>
+          <ProjectInfo title={title} tags={tags} />
+          <PageBody body={body} />
+        </Container>
+      </div>
+    )
+  }
+  // Default View, if projectMedia exists
   return (
     <div>
       <Helmet>
