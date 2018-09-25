@@ -6,6 +6,13 @@ import styled from 'styled-components'
 import bgImg from '../images/lassiter-bg-900.jpg'
 
 const BG = styled.article`
+
+@media only screen and (max-width: 411px) {
+  background-image: none;
+  background-repeat: no-repeat;
+  }
+
+@media only screen and (min-width: 412px) {
   background-image: url(${bgImg});
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -13,6 +20,7 @@ const BG = styled.article`
   height: 100vh;
   width: 100vw;
   z-index: -100;
+  }
 `
 
 const Index = ({ data }) => {

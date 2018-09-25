@@ -24,7 +24,7 @@ injectGlobal`
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    
+
   }
 
   /* Added to Fix Footer to bottom of viewport */
@@ -61,6 +61,7 @@ injectGlobal`
 
   ol, ul {
     list-style: none;
+    padding-inline-start: 0;
   }
 
   blockquote, q {
