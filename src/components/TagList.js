@@ -3,12 +3,19 @@ import styled from 'styled-components'
 import Link from 'gatsby-link'
 
 const List = styled.ul`
-  margin: 0 auto 2em auto;
+  margin: 1em auto 1em auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   max-width: ${props => props.theme.sizes.maxWidthCentered};
+  @media (max-width: ${props => props.theme.responsive.small}) {
+    margin: 0 auto 0 auto;
+  }
 `
 
 const Tag = styled.li`
   display: inline-block;
+  margin: 0 0 2em;
   a {
     transition: 0.2s;
     background: ${props => props.theme.colors.tertiary};

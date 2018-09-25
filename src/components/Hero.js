@@ -14,7 +14,7 @@ const BgImg = styled(Img)`
   z-index: -1;
   min-height: 300px;
   height: auto;
-  @media (min-width: ${props => props.theme.responsive.small}) {
+  @media (max-width: ${props => props.theme.responsive.small}) {
     height: ${props => props.height || 'auto'};
   }
   & > img {
@@ -36,18 +36,30 @@ const BgImg = styled(Img)`
 `
 
 const Title = styled.h1`
-  font-size: 3em;
-  text-transform: capitalize;
-  font-weight: 600;
-  position: absolute;
-  width: 100%;
-  max-width: ${props => props.theme.sizes.maxWidthCentered};
-  padding: 0 1rem;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
+  @media (min-width: ${props => props.theme.responsive.large}) {
+    font-size: 3em;
+    text-transform: capitalize;
+    font-weight: 600;
+    position: absolute;
+    width: 100%;
+    max-width: ${props => props.theme.sizes.maxWidthCentered};
+    padding: 0 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  @media (max-width: ${props => props.theme.responsive.small}) {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding: .5rem 0 1rem;
+    margin: 0rem auto 1rem;
+    background-color: ${props => props.theme.colors.secondary};
+    font-size: 2rem;
+    text-align: center;
+    color: ${props => props.theme.colors.base};
+  }
 `
 
 const Hero = props => (

@@ -9,8 +9,10 @@ const Post = styled.li`
   margin: 0 0 1em 0;
   width: 100%;
   transition: background 0.2s;
-  @media screen and (min-width: ${props => props.theme.responsive.small}) {
+  background: ${props => props.theme.colors.secondary};
+  @media screen and (max-width: ${props => props.theme.responsive.small}) {
     flex: 0 0 49%;
+    flex-direction: column;
     margin: 0 0 2vw 0;
   }
   @media screen and (min-width: ${props => props.theme.responsive.medium}) {
@@ -34,6 +36,9 @@ const Post = styled.li`
 `
 
 const Title = styled.h2`
+@media screen and (max-width: ${props => props.theme.responsive.small}) {
+  margin: 1rem 0 .25rem;
+}
   font-size: 1.5em;
   font-weight: 600;
   text-transform: capitalize;
@@ -41,11 +46,17 @@ const Title = styled.h2`
 `
 
 const Date = styled.h3`
+@media screen and (max-width: ${props => props.theme.responsive.small}) {
+  margin: .25rem 0 .5rem;
+}
   margin: 0 1rem 1.5rem 1rem;
   color: gray;
 `
 
 const Excerpt = styled.p`
+@media screen and (max-width: ${props => props.theme.responsive.small}) {
+  margin: .25rem 0 1rem;
+}
   margin: 0 1rem 1rem 1rem;
   line-height: 1.6;
 `

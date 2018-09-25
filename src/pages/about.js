@@ -3,11 +3,16 @@ import Container from '../components/Container'
 import SEO from '../components/SEO'
 import styled from 'styled-components'
 
+const Wrapper = styled.div`
+  margin: 0 auto;
+  background-color: white;
+`
+
 const Headshot = styled.img`
-@media only screen and (max-width: 411px) {
+@media screen and (max-width: ${props => props.theme.responsive.small}) {
   display: inline-block;
-  max-width: 100vw;
-  margin: 0 .5rem;
+  max-width: 100%;
+  margin: 0;
   }
 
 @media only screen and (min-width: 412px) {
@@ -18,12 +23,12 @@ const Headshot = styled.img`
 `
 const Bio = styled.div`
 
-@media only screen and (max-width: 411px) {
+@media screen and (max-width: ${props => props.theme.responsive.small}) {
   position: relative;
   display: inline-block;
-  background-color: white;
-  padding: .5rem .5rem .75rem;
-  margin: .25rem .5rem 0;
+  
+  padding: .5rem 1rem .75rem;
+  margin: .25rem 0rem 0;
   vertical-align: top
   width: 100%;
   font-size: 1em;
@@ -59,13 +64,13 @@ const About = ({ data }) => {
   const person = data.contentfulPerson
   console.log(person)
   return (
-    <div>
+    <Container>
       <SEO />
-      <Container>
+      <Wrapper>
         <Headshot src={person.image.sizes.src}/>
         <Bio dangerouslySetInnerHTML={{ __html: person.longBio.childMarkdownRemark.html }} />
-      </Container>
-    </div>
+      </Wrapper>
+    </Container>
   )
 }
 
