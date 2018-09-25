@@ -33,6 +33,9 @@ const Tag = styled.li`
 `
 
 const TagList = props => {
+  if (props.tags == null) {
+    return <List/>
+  }
   return (
     <List>
       {props.tags.map(tag => (

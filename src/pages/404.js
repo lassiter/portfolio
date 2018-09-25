@@ -21,6 +21,13 @@ const Title = styled.h1`
   margin: 0 0 3rem 0;
   line-height: 1.2;
 `
+const Img = styled.img`
+
+  margin: 0 auto;
+  height: 50%;
+  width: 50%;
+
+`
 
 const NotFoundPage = () => (
   <div>
@@ -32,6 +39,8 @@ const NotFoundPage = () => (
     <Box>
       <Title>Error 404</Title>
       <Text>Sorry, that page can't be found</Text>
+      <Img src={"https://media.giphy.com/media/Gpf8A8aX2uWAg/giphy.gif"}/>
+      <p><a href="https://giphy.com/gifs/reactiongifs-Gpf8A8aX2uWAg">via GIPHY ft. Ace Ventura</a></p>
     </Box>
   </div>
 )

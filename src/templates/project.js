@@ -16,7 +16,6 @@ const ProjectTemplate = ({ data }) => {
     tags
   } = data.contentfulProject
   const projectNode = data.contentfulProject
-
   // Alternate View, if projectMedia does not exists
   if (projectMedia == null) {
     return (

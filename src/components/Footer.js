@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import Copyright from '../components/Copyright'
+import { Link } from 'react-router-dom';
 
 const Wrapper = styled.footer`
   height: 45px;
@@ -7,7 +9,7 @@ const Wrapper = styled.footer`
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 0 0 auto;
+  margin: 0 auto 0;
   max-width: ${props => props.theme.sizes.maxWidth};
 `
 
@@ -27,6 +29,10 @@ const Item = styled.li`
   @media screen and (min-width: ${props => props.theme.responsive.small}) {
     width: auto;
   }
+  p {
+    font-weight: 600;
+    color: ${props => props.theme.colors.base};
+  } 
   a {
     font-weight: 600;
     transition: all 0.2s;
@@ -44,34 +50,10 @@ const Footer = () => (
   <Wrapper>
     <List>
       <Item>
-        <a
-          href="https://www.contentful.com/"
-          rel="nofollow noopener noreferrer"
-          target="_blank"
-        >
-          <img
-            src="https://images.ctfassets.net/fo9twyrwpveg/44baP9Gtm8qE2Umm8CQwQk/c43325463d1cb5db2ef97fca0788ea55/PoweredByContentful_LightBackground.svg"
-            style={{ width: '100px' }}
-            alt="Powered by Contentful"
-          />
-        </a>
+        <Copyright/>
       </Item>
       <Item>
-        <a
-          href="https://github.com/ryanwiemer/gatsby-starter-gcn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          gatsby-starter-gcn
-        </a>{' '}
-        by{' '}
-        <a
-          href="https://github.com/ryanwiemer"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          @ryanwiemer
-        </a>
+        <Link to={'/colophon/'}>Colophon</Link>
       </Item>
     </List>
   </Wrapper>

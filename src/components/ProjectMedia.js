@@ -2,13 +2,10 @@ import React from 'react'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 
-const Wrapper = styled.div`
-  position: relative;
-  min-height: 300px;
-`
 const List = styled.li`
   position: relative;
   min-height: 300px;
+  list-style-type: none;
 `
 const MediaItem = styled(Img)`
   position: absolute;
