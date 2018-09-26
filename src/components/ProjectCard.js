@@ -114,7 +114,7 @@ const Excerpt = styled.p`
 const Card = props => {
   return (
     <Project>
-      <StyledLink to={`/${props.slug}/`}>
+      <StyledLink to={`${props.slug}/`}>
         <ImgWrapper>
             <Date>{props.date}</Date>
             <Image sizes={props.image.sizes} backgroundColor={'#eeeeee'} />

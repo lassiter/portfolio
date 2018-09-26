@@ -5,6 +5,24 @@ import SEO from '../components/SEO'
 import styled from 'styled-components'
 import bgImg from '../images/lassiter-bg-900.jpg'
 
+const TopBG = styled.article`
+
+@media only screen and (max-width: 411px) {
+  background-image: none;
+  background-repeat: no-repeat;
+  }
+
+@media only screen and (min-width: 412px) {
+  background-image: url(${bgImg});
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top 15vh right 100px;
+  height: 100vh;
+  width: 100vw;
+  max-height: 500px;
+  z-index: -100;
+  }
+`
 const BG = styled.article`
 
 @media only screen and (max-width: 411px) {
@@ -28,7 +46,7 @@ const Index = ({ data }) => {
   return (
     <div>
       <SEO />
-      <BG />
+      <TopBG />
       <Container>
         <IntroCard
           key={person.id}

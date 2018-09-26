@@ -1,6 +1,9 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 const config = require('./src/utils/siteConfig')
 let contentfulConfig
-
 try {
   contentfulConfig = require('./.contentful')
 } catch (e) {
@@ -175,3 +178,4 @@ module.exports = {
     'gatsby-plugin-netlify',
   ],
 }
+console.log(process.env)
