@@ -3,8 +3,9 @@ import styled from 'styled-components'
 require('prismjs/themes/prism.css')
 
 const Body = styled.div`
-  margin: 0 auto;
-  max-width: ${props => props.theme.sizes.maxWidthCentered};
+  margin-bottom: 1em;
+  padding: 1em 1em;
+  background: ${props => props.theme.colors.tertiary};
 
   h1,
   h2,
@@ -27,7 +28,7 @@ const Body = styled.div`
 
   p {
     line-height: 1.6;
-    margin: 0 0 2em 0;
+    margin: 0 0 1em 0;
   }
 
   a {

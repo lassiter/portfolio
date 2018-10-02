@@ -7,7 +7,6 @@ const List = styled.ul`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: ${props => props.theme.sizes.maxWidthCentered};
   @media (max-width: ${props => props.theme.responsive.small}) {
     margin: 0 auto 0 auto;
   }

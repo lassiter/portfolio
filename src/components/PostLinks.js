@@ -6,7 +6,6 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: ${props => props.theme.sizes.maxWidthCentered};
   a {
     background: ${props => props.theme.colors.base};
     color: white;
@@ -34,9 +33,9 @@ const PostLinks = props => {
   return (
     <Wrapper>
       {props.previous && (
-        <PreviousLink to={`/${props.previous.slug}/`}>Prev Post</PreviousLink>
+        <PreviousLink to={`/posts/${props.previous.slug}/`}>Prev Post</PreviousLink>
       )}
-      {props.next && <NextLink to={`/${props.next.slug}/`}>Next Post</NextLink>}
+      {props.next && <NextLink to={`/posts/${props.next.slug}/`}>Next Post</NextLink>}
     </Wrapper>
   )
 }
