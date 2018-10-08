@@ -32,7 +32,7 @@ const Bio = styled.div`
   vertical-align: top
   width: 100%;
   font-size: 1em;
-  font-color: ${props => props.theme.colors.base};
+  color: ${props => props.theme.colors.base};
   & > p:first-child{
     margin-top: 0;
   }
@@ -41,7 +41,7 @@ const Bio = styled.div`
   }
 }
 
-@media only screen and (min-width: 412px) {
+@media only screen and (min-width: ${props => props.theme.responsive.small}) {
   position: relative;
   display: inline-block;
   background-color: white;
@@ -50,7 +50,8 @@ const Bio = styled.div`
   vertical-align: top
   max-width: 50vw;
   font-size: 1em;
-  font-color: ${props => props.theme.colors.base};
+  line-height: 1.25;
+  color: ${props => props.theme.colors.base};
   & > p:first-child{
     margin-top: 0;
   }
