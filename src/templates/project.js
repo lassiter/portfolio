@@ -15,7 +15,6 @@ const ProjectTemplate = ({ data }) => {
     body,
     tags
   } = data.contentfulProject
-  console.log(heroImage)
   const projectNode = data.contentfulProject
 
   // Alternate View, if heroImage does not exists

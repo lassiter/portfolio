@@ -30,7 +30,6 @@ const NextLink = styled(Link)`
 `
 
 const ProjectLinks = props => {
-  console.log(props)
   return (
     <Wrapper>
       {props.previous && (
