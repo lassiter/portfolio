@@ -26,9 +26,6 @@ const PostTemplate = ({ data }) => {
     data.allContentfulPost.edges,
     ({ node: post }) => post.id === id
   )
-  console.log(data.allContentfulPost.edges)
-  console.log(id)
-  console.log(publishDate)
   return (
     <div>
       <Helmet>

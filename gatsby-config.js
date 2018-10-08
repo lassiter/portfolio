@@ -178,4 +178,4 @@ module.exports = {
     'gatsby-plugin-netlify',
   ],
 }
-console.log(process.env.NODE_ENV, process.env.SEGMENT_PRODUCTION_WRITE_KEY)
+console.log("nodejs env: ", process.env.NODE_ENV, "Segment Production Key: ",process.env.SEGMENT_PRODUCTION_WRITE_KEY)
