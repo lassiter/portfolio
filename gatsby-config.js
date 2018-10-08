@@ -178,4 +178,3 @@ module.exports = {
     'gatsby-plugin-netlify',
   ],
 }
-console.log(process.env)

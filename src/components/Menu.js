@@ -37,7 +37,7 @@ const Nav = styled.nav`
     font-weight: 600;
     transition: all 0.2s;
     &:hover {
-      color: ${props => props.theme.colors.secondary};
+      color: gray;
     }
   }
 }
@@ -71,7 +71,7 @@ const Nav = styled.nav`
     font-weight: 600;
     transition: all 0.2s;
     &:hover {
-      color: ${props => props.theme.colors.secondary};
+      color: gray;
     }
   }
 }

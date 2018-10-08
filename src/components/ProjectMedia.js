@@ -38,7 +38,6 @@ const MediaItem = styled(Img)`
 
 const ProjectMedia = props => (
   <List>
-    {console.log(props.media)}
     {props.media.map(media => (
 
     <MediaItem 

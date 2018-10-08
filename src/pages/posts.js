@@ -7,7 +7,7 @@ import SEO from '../components/SEO'
 
 const Index = ({ data }) => {
   const posts = data.allContentfulPost.edges
-  console.log(data)
+
   return (
     <div>
       <SEO />

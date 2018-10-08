@@ -11,11 +11,14 @@ const ProjectTemplate = ({ data }) => {
   const {
     title,
     slug,
+    id,
     projectMedia,
     body,
+    publishDate,
     tags
   } = data.contentfulProject
   const projectNode = data.contentfulProject
+
   // Alternate View, if projectMedia does not exists
   if (projectMedia == null) {
     return (
@@ -76,7 +79,7 @@ query projectQuery($slug: String!) {
           ...GatsbyContentfulSizes_withWebp_noBase64
         }
     }
-	}
+  }
 }
 `
 // TODO: Figure out why contentful/graphql won't query Meta Description or Project Media

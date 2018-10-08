@@ -10,7 +10,6 @@ const Index = ({ data }) => {
   
   return (
     <div>
-      {projects.map((p) => (console.log(p.node)))}
       <SEO />
       <Container>
         <ProjectCardList>

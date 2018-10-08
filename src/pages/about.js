@@ -62,7 +62,7 @@ const Bio = styled.div`
 
 const About = ({ data }) => {
   const person = data.contentfulPerson
-  console.log(person)
+
   return (
     <Container>
       <SEO />
