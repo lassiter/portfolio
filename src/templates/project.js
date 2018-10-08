@@ -11,16 +11,15 @@ const ProjectTemplate = ({ data }) => {
   const {
     title,
     slug,
-    id,
-    projectMedia,
+    heroImage,
     body,
-    publishDate,
     tags
   } = data.contentfulProject
+  console.log(heroImage)
   const projectNode = data.contentfulProject
 
-  // Alternate View, if projectMedia does not exists
-  if (projectMedia == null) {
+  // Alternate View, if heroImage does not exists
+  if (heroImage == null) {
     return (
       <div>
         <Helmet>
@@ -35,7 +34,7 @@ const ProjectTemplate = ({ data }) => {
       </div>
     )
   }
-  // Default View, if projectMedia exists
+  // Default View, if heroImage exists
   return (
     <div>
       <Helmet>
@@ -46,7 +45,7 @@ const ProjectTemplate = ({ data }) => {
       <Container>
         <ProjectInfo title={title} tags={tags} />
         <PageBody body={body} />
-        <ProjectMedia media={projectMedia} />
+        <ProjectMedia media={heroImage} />
       </Container>
     </div>
   )
@@ -68,17 +67,15 @@ query projectQuery($slug: String!) {
 			  childMarkdownRemark {
 			    html
 			  }
-			}
-      requirements	
-      results
-      projectMedia {
-        id
+      }
+      heroImage {
         title
-        description
-        sizes(maxWidth: 800, maxHeight: 525) {
+        sizes(maxWidth: 1200, quality: 90) {
           ...GatsbyContentfulSizes_withWebp_noBase64
         }
-    }
+      }
+      requirements	
+      results
   }
 }
 `

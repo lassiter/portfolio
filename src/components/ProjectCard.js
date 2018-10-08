@@ -112,6 +112,7 @@ const Excerpt = styled.p`
 `
 
 const Card = props => {
+  console.log(props.slug)
   return (
     <Project>
       <StyledLink to={`${props.slug}/`}>

@@ -36,17 +36,16 @@ const MediaItem = styled(Img)`
   }
 `
 
-const ProjectMedia = props => (
-  <List>
-    {props.media.map(media => (
-
-    <MediaItem 
-      key={media.id}
-      sizes ={ media.sizes }
-      title = { media.title }
-    />
-    ))}
-  </List>
-)
+const ProjectMedia = props => {
+  return (
+    <List>
+      <MediaItem 
+        key={props.media.id}
+        sizes ={ props.media.sizes }
+        title = { props.media.title }
+      />
+    </List>
+  )
+}
 
 export default ProjectMedia

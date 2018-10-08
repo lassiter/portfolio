@@ -6,13 +6,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "0xers3fafzag"
+            "id": "mlafe1ddeja4"
           }
         },
-        "id": "post",
+        "id": "CTA",
         "type": "ContentType",
-        "createdAt": "2018-03-03T22:58:15.713Z",
-        "updatedAt": "2018-05-16T20:34:58.106Z",
+        "createdAt": "2016-08-12T16:52:29.284Z",
+        "updatedAt": "2016-08-12T16:52:29.575Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -24,31 +24,402 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedCounter": 22,
-        "version": 44,
+        "publishedCounter": 1,
+        "version": 2,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedVersion": 43,
-        "firstPublishedAt": "2018-03-03T22:58:19.194Z",
-        "publishedAt": "2018-05-16T20:34:58.106Z"
+        "publishedVersion": 1,
+        "firstPublishedAt": "2016-08-12T16:52:29.566Z",
+        "publishedAt": "2016-08-12T16:52:29.566Z"
+      },
+      "displayField": "ctaTitle",
+      "name": "Call-to-Action Text",
+      "description": "",
+      "fields": [
+        {
+          "id": "ctaTitle",
+          "name": "CTA Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "ctaSubTitle",
+          "name": "CTA Sub-Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "ctaButton",
+          "name": "CTA Button",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "size": {
+                "max": 60
+              },
+              "message": "No more than 60 characters."
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "mlafe1ddeja4"
+          }
+        },
+        "id": "callToActionTextImage",
+        "type": "ContentType",
+        "createdAt": "2016-08-12T16:53:16.864Z",
+        "updatedAt": "2016-08-12T17:00:22.781Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedVersion": 3,
+        "firstPublishedAt": "2016-08-12T16:53:17.164Z",
+        "publishedAt": "2016-08-12T17:00:22.771Z"
+      },
+      "displayField": "ctaTitle",
+      "name": "Call-to-Action Text & Image",
+      "description": "",
+      "fields": [
+        {
+          "id": "ctaImgSQ",
+          "name": "CTA Image Square",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "linkMimetypeGroup": [
+                "image"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "ctaTitle",
+          "name": "CTA Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "ctaSubTitle",
+          "name": "CTA Sub-Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "ctaDescription",
+          "name": "CTA Description",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "ctaButton",
+          "name": "CTA Button",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "size": {
+                "max": 60
+              },
+              "message": "No more than 60 characters."
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "mlafe1ddeja4"
+          }
+        },
+        "id": "person",
+        "type": "ContentType",
+        "createdAt": "2018-07-18T01:03:16.253Z",
+        "updatedAt": "2018-07-30T19:33:56.254Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedVersion": 3,
+        "firstPublishedAt": "2018-07-18T01:03:19.737Z",
+        "publishedAt": "2018-07-30T19:33:56.254Z"
+      },
+      "displayField": "name",
+      "name": "Person",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "company",
+          "name": "Company",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "shortBio",
+          "name": "Short Bio",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "longBio",
+          "name": "Long Bio",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "email",
+          "name": "Email",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "phone",
+          "name": "Phone",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "facebook",
+          "name": "Facebook",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "twitter",
+          "name": "Twitter",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "github",
+          "name": "Github",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "mlafe1ddeja4"
+          }
+        },
+        "id": "tag",
+        "type": "ContentType",
+        "createdAt": "2018-07-18T02:08:53.625Z",
+        "updatedAt": "2018-07-18T02:08:57.702Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-07-18T02:08:57.702Z",
+        "publishedAt": "2018-07-18T02:08:57.702Z"
       },
       "displayField": "title",
-      "name": "Post",
+      "name": "Tag",
       "description": "",
       "fields": [
         {
@@ -58,6 +429,9 @@
           "localized": false,
           "required": true,
           "validations": [
+            {
+              "unique": true
+            }
           ],
           "disabled": false,
           "omitted": false
@@ -69,7 +443,83 @@
           "localized": false,
           "required": true,
           "validations": [
+            {
+              "unique": true
+            }
           ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "mlafe1ddeja4"
+          }
+        },
+        "id": "post",
+        "type": "ContentType",
+        "createdAt": "2018-07-18T02:08:53.641Z",
+        "updatedAt": "2018-07-18T02:08:57.201Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-07-18T02:08:57.201Z",
+        "publishedAt": "2018-07-18T02:08:57.201Z"
+      },
+      "displayField": "title",
+      "name": "Post",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -79,8 +529,7 @@
           "type": "Date",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -90,8 +539,7 @@
           "type": "Link",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false,
           "linkType": "Asset"
@@ -102,8 +550,7 @@
           "type": "Text",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -113,8 +560,7 @@
           "type": "Array",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false,
           "items": {
@@ -154,13 +600,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "0xers3fafzag"
+            "id": "mlafe1ddeja4"
           }
         },
         "id": "page",
         "type": "ContentType",
-        "createdAt": "2018-03-03T22:58:15.903Z",
-        "updatedAt": "2018-05-16T20:31:35.771Z",
+        "createdAt": "2018-07-18T02:08:53.694Z",
+        "updatedAt": "2018-07-18T02:08:58.325Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -172,28 +618,28 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedCounter": 14,
-        "version": 28,
+        "publishedCounter": 1,
+        "version": 2,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedVersion": 27,
-        "firstPublishedAt": "2018-03-03T22:58:19.838Z",
-        "publishedAt": "2018-05-16T20:31:35.771Z"
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-07-18T02:08:58.325Z",
+        "publishedAt": "2018-07-18T02:08:58.325Z"
       },
       "displayField": "title",
       "name": "Page",
@@ -205,8 +651,7 @@
           "type": "Symbol",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -216,8 +661,7 @@
           "type": "Symbol",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -227,8 +671,7 @@
           "type": "Text",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -257,13 +700,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "0xers3fafzag"
+            "id": "mlafe1ddeja4"
           }
         },
-        "id": "tag",
+        "id": "project",
         "type": "ContentType",
-        "createdAt": "2018-03-04T00:56:04.813Z",
-        "updatedAt": "2018-03-04T00:56:05.520Z",
+        "createdAt": "2018-07-30T02:27:20.882Z",
+        "updatedAt": "2018-09-25T03:06:43.449Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -275,31 +718,31 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedCounter": 1,
-        "version": 2,
+        "publishedCounter": 7,
+        "version": 14,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedVersion": 1,
-        "firstPublishedAt": "2018-03-04T00:56:05.520Z",
-        "publishedAt": "2018-03-04T00:56:05.520Z"
+        "publishedVersion": 13,
+        "firstPublishedAt": "2018-07-30T02:27:21.120Z",
+        "publishedAt": "2018-09-25T03:06:43.449Z"
       },
       "displayField": "title",
-      "name": "Tag",
+      "name": "Project",
       "description": "",
       "fields": [
         {
@@ -308,11 +751,17 @@
           "type": "Symbol",
           "localized": false,
           "required": true,
-          "validations": [
-            {
-              "unique": true
-            }
-          ],
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -329,6 +778,128 @@
           ],
           "disabled": false,
           "omitted": false
+        },
+        {
+          "id": "publishDate",
+          "name": "Publish Date",
+          "type": "Date",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "heroImage",
+          "name": "Hero Image",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "body",
+          "name": "Body",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "tags",
+          "name": "Tags",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "tag"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "metaDescription",
+          "name": "Meta Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "size": {
+                "min": null,
+                "max": 320
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "requirements",
+          "name": "Requirements",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": []
+          }
+        },
+        {
+          "id": "results",
+          "name": "Results",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": []
+          }
+        },
+        {
+          "id": "projectMedia",
+          "name": "Project Media",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [],
+            "linkType": "Asset"
+          }
+        },
+        {
+          "id": "feature",
+          "name": "Feature",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
         }
       ]
     }
@@ -340,24 +911,292 @@
         "type": "EditorInterface",
         "space": {
           "sys": {
-            "id": "0xers3fafzag",
+            "id": "mlafe1ddeja4",
             "type": "Link",
             "linkType": "Space"
           }
         },
-        "version": 44,
-        "createdAt": "2018-03-03T22:58:19.413Z",
+        "version": 2,
+        "createdAt": "2016-08-12T16:52:29.983Z",
         "createdBy": {
           "sys": {
-            "id": "6bursH6S5NNRZVuRrO7oVO",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ",
             "type": "Link",
             "linkType": "User"
           }
         },
-        "updatedAt": "2018-05-16T20:35:00.430Z",
+        "updatedAt": "2016-08-12T16:52:30.885Z",
         "updatedBy": {
           "sys": {
-            "id": "6bursH6S5NNRZVuRrO7oVO",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "CTA",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "ctaTitle",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "ctaSubTitle",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "ctaButton",
+          "widgetId": "singleLine"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "mlafe1ddeja4",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2016-08-12T16:53:17.401Z",
+        "createdBy": {
+          "sys": {
+            "id": "40qYgLUMZMjfFa1FPi6dsJ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2016-08-12T17:00:25.280Z",
+        "updatedBy": {
+          "sys": {
+            "id": "40qYgLUMZMjfFa1FPi6dsJ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "callToActionTextImage",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "ctaImgSQ",
+          "widgetId": "assetLinkEditor"
+        },
+        {
+          "fieldId": "ctaTitle",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "ctaSubTitle",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "ctaDescription",
+          "widgetId": "multipleLine"
+        },
+        {
+          "fieldId": "ctaButton",
+          "widgetId": "singleLine"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "mlafe1ddeja4",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2018-07-18T01:03:20.047Z",
+        "createdBy": {
+          "sys": {
+            "id": "40qYgLUMZMjfFa1FPi6dsJ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-07-30T19:33:56.681Z",
+        "updatedBy": {
+          "sys": {
+            "id": "40qYgLUMZMjfFa1FPi6dsJ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "person",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "company",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "shortBio",
+          "widgetId": "markdown"
+        },
+        {
+          "fieldId": "longBio",
+          "widgetId": "markdown"
+        },
+        {
+          "fieldId": "email",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "phone",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "facebook",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "twitter",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "github",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "image",
+          "widgetId": "assetLinkEditor"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "mlafe1ddeja4",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2018-07-18T02:08:57.958Z",
+        "createdBy": {
+          "sys": {
+            "id": "40qYgLUMZMjfFa1FPi6dsJ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-07-18T02:08:59.123Z",
+        "updatedBy": {
+          "sys": {
+            "id": "40qYgLUMZMjfFa1FPi6dsJ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "tag",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "slug",
+          "widgetId": "slugEditor"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "mlafe1ddeja4",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2018-07-18T02:08:57.370Z",
+        "createdBy": {
+          "sys": {
+            "id": "40qYgLUMZMjfFa1FPi6dsJ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-07-18T02:08:59.278Z",
+        "updatedBy": {
+          "sys": {
+            "id": "40qYgLUMZMjfFa1FPi6dsJ",
             "type": "Link",
             "linkType": "User"
           }
@@ -424,24 +1263,24 @@
         "type": "EditorInterface",
         "space": {
           "sys": {
-            "id": "0xers3fafzag",
+            "id": "mlafe1ddeja4",
             "type": "Link",
             "linkType": "Space"
           }
         },
-        "version": 28,
-        "createdAt": "2018-03-03T22:58:20.114Z",
+        "version": 2,
+        "createdAt": "2018-07-18T02:08:58.574Z",
         "createdBy": {
           "sys": {
-            "id": "6bursH6S5NNRZVuRrO7oVO",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ",
             "type": "Link",
             "linkType": "User"
           }
         },
-        "updatedAt": "2018-05-16T20:31:39.383Z",
+        "updatedAt": "2018-07-18T02:08:59.318Z",
         "updatedBy": {
           "sys": {
-            "id": "6bursH6S5NNRZVuRrO7oVO",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ",
             "type": "Link",
             "linkType": "User"
           }
@@ -489,31 +1328,31 @@
         "type": "EditorInterface",
         "space": {
           "sys": {
-            "id": "0xers3fafzag",
+            "id": "mlafe1ddeja4",
             "type": "Link",
             "linkType": "Space"
           }
         },
-        "version": 2,
-        "createdAt": "2018-03-04T00:56:05.733Z",
+        "version": 14,
+        "createdAt": "2018-07-30T02:27:21.368Z",
         "createdBy": {
           "sys": {
-            "id": "6bursH6S5NNRZVuRrO7oVO",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ",
             "type": "Link",
             "linkType": "User"
           }
         },
-        "updatedAt": "2018-03-04T00:56:06.275Z",
+        "updatedAt": "2018-09-25T03:06:43.937Z",
         "updatedBy": {
           "sys": {
-            "id": "6bursH6S5NNRZVuRrO7oVO",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ",
             "type": "Link",
             "linkType": "User"
           }
         },
         "contentType": {
           "sys": {
-            "id": "tag",
+            "id": "project",
             "type": "Link",
             "linkType": "ContentType"
           }
@@ -532,8 +1371,62 @@
           "widgetId": "singleLine"
         },
         {
+          "fieldId": "subtitle",
+          "widgetId": "singleLine"
+        },
+        {
           "fieldId": "slug",
           "widgetId": "slugEditor"
+        },
+        {
+          "fieldId": "publishDate",
+          "settings": {
+            "ampm": "12",
+            "format": "dateonly"
+          },
+          "widgetId": "datePicker"
+        },
+        {
+          "fieldId": "heroImage",
+          "widgetId": "assetLinkEditor"
+        },
+        {
+          "fieldId": "body",
+          "widgetId": "markdown"
+        },
+        {
+          "fieldId": "tags",
+          "settings": {
+            "bulkEditing": false
+          },
+          "widgetId": "entryLinksEditor"
+        },
+        {
+          "fieldId": "metaDescription",
+          "settings": {
+            "helpText": "Used for SEO. If left blank a post/page excerpt will be used. See the README for more details."
+          },
+          "widgetId": "multipleLine"
+        },
+        {
+          "fieldId": "requirements",
+          "widgetId": "listInput"
+        },
+        {
+          "fieldId": "results",
+          "widgetId": "listInput"
+        },
+        {
+          "fieldId": "projectMedia",
+          "widgetId": "assetLinksEditor"
+        },
+        {
+          "fieldId": "feature",
+          "settings": {
+            "trueLabel": "Yes",
+            "falseLabel": "No"
+          },
+          "widgetId": "boolean"
         }
       ]
     }
@@ -545,13 +1438,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "0xers3fafzag"
+            "id": "mlafe1ddeja4"
           }
         },
-        "id": "3nAFKDwDRKo6Wg0WO0QsaM",
+        "id": "15jwOBqpxqSAOy2eOO4S0m",
         "type": "Entry",
-        "createdAt": "2018-03-03T22:58:29.282Z",
-        "updatedAt": "2018-05-16T20:40:40.850Z",
+        "createdAt": "2018-07-18T01:03:29.879Z",
+        "updatedAt": "2018-10-08T02:25:28.507Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -563,48 +1456,75 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedCounter": 12,
-        "version": 179,
+        "publishedCounter": 7,
+        "version": 399,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedVersion": 178,
-        "firstPublishedAt": "2018-03-03T22:58:29.678Z",
-        "publishedAt": "2018-05-16T20:40:40.850Z",
+        "publishedVersion": 398,
+        "firstPublishedAt": "2018-07-18T01:03:33.400Z",
+        "publishedAt": "2018-10-08T02:25:28.507Z",
         "contentType": {
           "sys": {
             "type": "Link",
             "linkType": "ContentType",
-            "id": "page"
+            "id": "person"
           }
         }
       },
       "fields": {
+        "name": {
+          "en-US": "Lassiter Gregg"
+        },
         "title": {
-          "en-US": "About"
+          "en-US": "Software Engineer"
         },
-        "slug": {
-          "en-US": "about"
+        "company": {
+          "en-US": "Freelance"
         },
-        "body": {
-          "en-US": "![about](//images.ctfassets.net/0xers3fafzag/1yyfw0vtIY2qEQqkKYMGwK/0b03e5f3556489a2079f01a8dc600ce5/about.jpg)\n\n# Doggo Ipsum \n\nWrinkler ur givin me a spook heckin floofs long water shoob, sub woofer boof heckin dat tungg tho corgo, smol borkf you are doing me a frighten. Wow such tempt ruff bork I am bekom fat shooberino, tungg adorable doggo. Wow very biscit doge he made many woofs sub woofer smol borking doggo with a long snoot for pats blop, many pats most angery pupper I have ever seen he made many woofs clouds. Long water shoob porgo pupperino shoob heckin good boys and girls.\n\n## Woofer\n\nBoofers much ruin diet woofer borkf, length boy. Clouds extremely __cuuuuuute__ thicc [smol](https://www.google.com) I am ~~bekom fat~~, doggorino clouds porgo shooberino super chub, aqua doggo super chub very taste wow. Dat tungg tho waggy wags blop heckin sub woofer, shibe wow such tempt adorable doggo. Thicc shoob you are doing me the shock fat boi very hand that feed shibe big ol pupper long water shoob heckin good.\n\n### Tail Waggers\n\n- Fido\n- Rex \n- Lola\n- Bella\n\n---\n\n1. Feed\n2. Play\n3. Love\n\n> He made many woofs fat boi heckin good boys, shibe. Doggorino long water shoob maximum.\n\n```javascript\nconst dog = \"doggo\";\n```\n"
+        "shortBio": {
+          "en-US": "I'm Lassiter Gregg, a software engineer, born and initially raised in the Philippines with stents across Europe and the good ole USA. He currently resides in Houston, TX with occasional stints in NYC and Chicago.\n\nI build useful and interesting things to solve problems while applying my past experiences in the marketing & advertising, legal, non-profit, and media industries along the way.\n\nBefore, I worked as an integrated producer and marketing consultant in Chicago and NYC with AIGA, Moody Global Ministries, and local small businesses."
         },
-        "metaDescription": {
-          "en-US": "Manually Entered Meta Description Example - Wrinkler ur givin me a spook heckin floofs long water shoob, sub woofer boof heckin dat tungg tho corgo, smol borkf you are doing me a frighten. Wow such tempt ruff bork I am bekom fat shooberino."
+        "longBio": {
+          "en-US": "__Lassiter Gregg is a multi-disciplinary builder of useful and interesting things. Originally born and initially raised in the Philippines with stents across Europe and the good ole USA. He currently resides in Houston, TX, and NYC.__\n\nLassiter's journey has been a series of zigs and zags. Ranging from living overseas and everything that entails to dropping out of high school for a year then returning to bust his ass completing high school with almost an associates degree. He eventually ended up at a seminary pursuing life's biggest questions. \n\nDuring that time, Lassiter landed in the marketing industry working in it for 5 years and eventually co-founded a small marketing consultancy with two friends. After almost two years of the small business grind, we all realized it was a time for a change and wasn't what we wanted to continue doing. \n\nLassiter took the opportunity to move to NYC and continued on as an individual marketing consultant landing clients until he his childhood interest of technology and the Web eventually leading to him joining a year-long software engineering intensive with Bloc and interned with The Futur. Lassiter has no regrets and currently builds software for freelance clients while looking for a permanent home in NYC."
+        },
+        "email": {
+          "en-US": "lassiter@lassitergregg.com"
+        },
+        "phone": {
+          "en-US": "8324959903"
+        },
+        "facebook": {
+          "en-US": "lassitergregg"
+        },
+        "twitter": {
+          "en-US": "lassitergregg"
+        },
+        "github": {
+          "en-US": "lassiter"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "40R6A6RhVumSaOQWISc2m2"
+            }
+          }
         }
       }
     },
@@ -614,76 +1534,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "0xers3fafzag"
-          }
-        },
-        "id": "1aLV4GlZbK8iaAMCOoAm6O",
-        "type": "Entry",
-        "createdAt": "2018-03-06T23:09:15.463Z",
-        "updatedAt": "2018-03-06T23:09:40.734Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
-          }
-        },
-        "publishedCounter": 2,
-        "version": 6,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
-          }
-        },
-        "publishedVersion": 5,
-        "firstPublishedAt": "2018-03-06T23:09:27.112Z",
-        "publishedAt": "2018-03-06T23:09:40.734Z",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "tag"
-          }
-        }
-      },
-      "fields": {
-        "title": {
-          "en-US": "Fun"
-        },
-        "slug": {
-          "en-US": "fun"
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "0xers3fafzag"
+            "id": "mlafe1ddeja4"
           }
         },
         "id": "3KMYXUOJeMI8qomAMs2kco",
         "type": "Entry",
-        "createdAt": "2018-03-06T23:09:45.626Z",
-        "updatedAt": "2018-03-06T23:11:04.031Z",
+        "createdAt": "2018-07-18T02:09:07.454Z",
+        "updatedAt": "2018-07-30T18:44:19.580Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -695,28 +1552,28 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedCounter": 1,
-        "version": 13,
+        "publishedCounter": 2,
+        "version": 15,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedVersion": 12,
-        "firstPublishedAt": "2018-03-06T23:11:04.031Z",
-        "publishedAt": "2018-03-06T23:11:04.031Z",
+        "publishedVersion": 14,
+        "firstPublishedAt": "2018-07-18T02:09:14.030Z",
+        "publishedAt": "2018-07-30T18:44:19.580Z",
         "contentType": {
           "sys": {
             "type": "Link",
@@ -727,10 +1584,10 @@
       },
       "fields": {
         "title": {
-          "en-US": "Play"
+          "en-US": "React"
         },
         "slug": {
-          "en-US": "play"
+          "en-US": "react"
         }
       }
     },
@@ -740,13 +1597,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "0xers3fafzag"
+            "id": "mlafe1ddeja4"
           }
         },
-        "id": "3f4RcDO5pSKWwg4as6C0Ko",
+        "id": "1aLV4GlZbK8iaAMCOoAm6O",
         "type": "Entry",
-        "createdAt": "2018-03-06T23:11:17.177Z",
-        "updatedAt": "2018-03-06T23:11:21.440Z",
+        "createdAt": "2018-07-18T02:09:07.503Z",
+        "updatedAt": "2018-07-30T18:43:07.597Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -758,28 +1615,28 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedCounter": 1,
-        "version": 4,
+        "publishedCounter": 3,
+        "version": 14,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedVersion": 3,
-        "firstPublishedAt": "2018-03-06T23:11:21.440Z",
-        "publishedAt": "2018-03-06T23:11:21.440Z",
+        "publishedVersion": 13,
+        "firstPublishedAt": "2018-07-18T02:09:14.453Z",
+        "publishedAt": "2018-07-30T18:43:07.597Z",
         "contentType": {
           "sys": {
             "type": "Link",
@@ -790,10 +1647,10 @@
       },
       "fields": {
         "title": {
-          "en-US": "Obedient"
+          "en-US": "Rails"
         },
         "slug": {
-          "en-US": "obedient"
+          "en-US": "rails"
         }
       }
     },
@@ -803,13 +1660,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "0xers3fafzag"
+            "id": "mlafe1ddeja4"
           }
         },
-        "id": "2ndvQV2yIsooo8eMk6YWim",
+        "id": "3wnBmHFsMg8KAOq2kagiks",
         "type": "Entry",
-        "createdAt": "2018-03-06T23:11:46.846Z",
-        "updatedAt": "2018-03-06T23:12:12.045Z",
+        "createdAt": "2018-07-18T02:09:07.723Z",
+        "updatedAt": "2018-07-30T18:42:12.379Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -821,154 +1678,28 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedCounter": 1,
-        "version": 9,
+        "publishedCounter": 3,
+        "version": 54,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedVersion": 8,
-        "firstPublishedAt": "2018-03-06T23:12:12.045Z",
-        "publishedAt": "2018-03-06T23:12:12.045Z",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "tag"
-          }
-        }
-      },
-      "fields": {
-        "title": {
-          "en-US": "Fancy"
-        },
-        "slug": {
-          "en-US": "fancy"
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "0xers3fafzag"
-          }
-        },
-        "id": "1LvjGKhfn2i4AU2cYOmM4C",
-        "type": "Entry",
-        "createdAt": "2018-03-06T23:13:06.284Z",
-        "updatedAt": "2018-03-06T23:13:10.672Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
-          }
-        },
-        "publishedCounter": 1,
-        "version": 5,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
-          }
-        },
-        "publishedVersion": 4,
-        "firstPublishedAt": "2018-03-06T23:13:10.672Z",
-        "publishedAt": "2018-03-06T23:13:10.672Z",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "tag"
-          }
-        }
-      },
-      "fields": {
-        "title": {
-          "en-US": "Cute"
-        },
-        "slug": {
-          "en-US": "cute"
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "0xers3fafzag"
-          }
-        },
-        "id": "46W6F2LB9KK48AoKWGKQWy",
-        "type": "Entry",
-        "createdAt": "2018-03-03T22:58:29.267Z",
-        "updatedAt": "2018-05-16T20:40:51.719Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
-          }
-        },
-        "publishedCounter": 20,
-        "version": 125,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
-          }
-        },
-        "publishedVersion": 124,
-        "firstPublishedAt": "2018-03-03T22:58:31.635Z",
-        "publishedAt": "2018-05-16T20:40:51.719Z",
+        "publishedVersion": 53,
+        "firstPublishedAt": "2018-07-18T02:09:10.464Z",
+        "publishedAt": "2018-07-30T18:42:12.379Z",
         "contentType": {
           "sys": {
             "type": "Link",
@@ -979,10 +1710,106 @@
       },
       "fields": {
         "title": {
-          "en-US": "Beach Day"
+          "en-US": "An Introduction to CLIs: A look inside a Junior Software Engineer's CLI Toolbox for other Juniors"
         },
         "slug": {
-          "en-US": "beach-day"
+          "en-US": "junior-devs-introduction-to-cli-part-1"
+        },
+        "publishDate": {
+          "en-US": "2018-02-16"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4AmZcBIrXaCKkyAGAGgoMG"
+            }
+          }
+        },
+        "body": {
+          "en-US": "One of the biggest benefits for growing developers is to have a strong toolbox of command line interface (CLI) tools to improve your efficiency. These are the tools that I'm learning or have learned to use and why:\n\n# Git\nWhere better to start than Git which is arguably is the most important command line tools that a developer can learn outside of an in terminal editor like Vim or Emacs. It allows us to easily incrementally save and share progress on projects via hosted repositories like GitHub and GitLab. You can easily work on new ideas in their own branch before merging your main project (\"master branch\") with your new idea (\"idea branch\").\n\n## Scripts and Aliases that I use for Git\n\n### git detail-log\nI have an alias called `detail-log` that I use to review my previous commits across my branches. It provides a visually drawn out terminal log of my commits and how they apply to branches. \n\nThis is the alias:\n```\n[alias]\n       detail-log = log --graph --decorate --oneline\n```\nIt's simply doing three things, listing out the visual graph of my branches then aligining my commits in one line rows along those branches and color coding them.\n\nIf you want to use this you can simply type `git config --global alias.detail-log log --graph --decorate --oneline` in your command line or open up `~/.gitconfig` with `vi` or `nano` and copy/paste the alias code block above and restart your terminal. Then, next time you type `git detail-log` in a project you should have an easily readable commit log."
+        },
+        "tags": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1aLV4GlZbK8iaAMCOoAm6O"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1LvjGKhfn2i4AU2cYOmM4C"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "mlafe1ddeja4"
+          }
+        },
+        "id": "46W6F2LB9KK48AoKWGKQWy",
+        "type": "Entry",
+        "createdAt": "2018-07-18T02:09:07.845Z",
+        "updatedAt": "2018-07-30T19:05:31.193Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedVersion": 6,
+        "firstPublishedAt": "2018-07-18T02:09:12.009Z",
+        "publishedAt": "2018-07-30T19:05:31.193Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "post"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Unique Interactions on Polymorphic Self-Relationships in Rails"
+        },
+        "slug": {
+          "en-US": "unique-interactions-on-polymorphic-self-relationships-in-rails"
         },
         "publishDate": {
           "en-US": "2018-02-12"
@@ -997,7 +1824,7 @@
           }
         },
         "body": {
-          "en-US": "Wow very biscit maximum borkdrive pats you are doing me the shock big ol, maximum borkdrive boofers. Very good spot long bois long woofer heckin smol blep, blop doge big ol pupper. Length boy extremely cuuuuuute doing me a frighten many pats very hand that feed shibe puggorino doggorino, maximum borkdrive noodle horse you are doing me a frighten blop dat tungg tho.  Blop very jealous pupper you are doin me a concern, heckin angery woofer. Puggo snoot very good spot borkdrive doge, heckin mlem sub woofer. Fat boi doing me a frighten waggy wags you are doing me a frighten, pupper long bois. Floofs ur givin me a spook maximum borkdrive long bois very taste wow, such treat shoober. Doing me a frighten blep very jealous pupper porgo ur givin me a spook most angery pupper I have ever seen ur givin me a spook sub woofer, shoob pupper long water shoob shibe shoob corgo. very jealous pupper much ruin diet woofer. Doing me a frighten he made many woofs fluffer, lotsa pats. Woofer heckin good boys adorable doggo big ol pats, heckin corgo.\n\nMany pats puggorino much ruin diet pupper you are doing me the shock pupper stop it fren, very good spot most angery pupper I have ever seen shoober mlem. Aqua doggo vvv you are doing me the shock tungg you are doin me a concern adorable doggo, borking doggo yapper length boy. Pupper bork heckin very hand that feed shibe blop, lotsa pats you are doing me the shock very hand that feed shibe. Blep most angery pupper I have ever seen I am bekom fat bork, aqua doggo heck. Thicc bork heck fat boi, snoot puggo. Heckin heckin good boys long water shoob, you are doing me the shock. Long bois boof woofer the neighborhood pupper, shoob. Blep long doggo maximum borkdrive noodle horse, super chub. Puggo waggy wags many pats very good spot long woofer extremely cuuuuuute, borking doggo corgo doge. extremely cuuuuuute floofs doing me a frighten. Thicc most angery pupper I have ever seen mlem noodle horse, bork dat tungg tho. Boofers blop heckin good boys long doggo snoot pupper, borking doggo doing me a frighten snoot bork.\n\nFluffer long water shoob much ruin diet woofer lotsa pats shibe long water shoob, borkdrive vvv mlem dat tungg tho puggorino. Borking doggo heckin good boys and girls you are doing me the shock heck woofer stop it fren heck, boofers puggo doggorino adorable doggo. Sub woofer long doggo shoober you are doing me a frighten borking doggo borkdrive, blop heckin angery woofer he made many woofs pats. Tungg much ruin diet shibe smol borking doggo with a long snoot for pats, heckin good boys and girls. Such treat wrinkler doge heck I am bekom fat much ruin diet doggo pupper, smol ruff extremely cuuuuuute heckin good boys boof. Many pats very hand that feed shibe length boy long water shoob, heckin angery woofer. Length boy borkdrive maximum borkdrive yapper boof shibe big ol, doggo heckin angery woofer lotsa pats much ruin diet borkdrive, very taste wow maximum borkdrive ruff blep snoot."
+          "en-US": "\nWhile coding the backend for my capstone FamNet, an open sourced closed social network for families, I eventually got to the need to create a way for users to interact with hearts, likes, stars, and etc. on my primary models: Posts, Comments, Comment on Comments, and Recipes. There were a few ways I could do this: \n- I could approach it from a `has_many :X, through: Y` which would create a lot of tables for each interaction type.\n- I could approach it from a ...\nOr, I could approach it using a polymorphic self-relationship table, and here is why:\n\nPros\n\n- item\n\nCons\n\n- item\n\nIn my opinon, x outweighs y which lead me to do this.\n\nMy journy started with this post in the Ruby on Rails Link Slack:\n> Can a polymorphic association be set on itself? Like,  \n> ```\n> class Interaction < Application Record\n>     belongs_to :interaction, polymorphic: true\n> end\n> ```\n> \n> I'm trying to set up an interaction model/controller for likes, dislikes, hearts, and etc for a post, comment, and commentoncomment models/controllers.\n> Ideally, I'd like to call something like `@post.interactions` to see the list of interactions or `@post.interaction.heart!` to create a new specific interaction type.\nIt was also, 10:14 PM at night, so, I searched and searched until I...\n\n\n"
         },
         "tags": {
           "en-US": [
@@ -1028,13 +1855,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "0xers3fafzag"
+            "id": "mlafe1ddeja4"
           }
         },
-        "id": "gaDq907enKa8UeKuAWOQG",
+        "id": "4qqnzWpXawqIK2CokIwGE",
         "type": "Entry",
-        "createdAt": "2018-03-03T22:58:29.258Z",
-        "updatedAt": "2018-03-06T23:13:20.511Z",
+        "createdAt": "2018-07-30T18:50:59.133Z",
+        "updatedAt": "2018-10-08T02:35:07.728Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1046,57 +1873,60 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedCounter": 8,
-        "version": 40,
+        "publishedCounter": 4,
+        "version": 770,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedVersion": 39,
-        "firstPublishedAt": "2018-03-03T22:58:30.073Z",
-        "publishedAt": "2018-03-06T23:13:20.511Z",
+        "publishedVersion": 769,
+        "firstPublishedAt": "2018-07-30T18:54:41.007Z",
+        "publishedAt": "2018-10-08T02:35:07.728Z",
         "contentType": {
           "sys": {
             "type": "Link",
             "linkType": "ContentType",
-            "id": "post"
+            "id": "project"
           }
         }
       },
       "fields": {
         "title": {
-          "en-US": "A Walk In The Park"
+          "en-US": "Portfolio V1"
+        },
+        "subtitle": {
+          "en-US": "Personal Project"
         },
         "slug": {
-          "en-US": "a-walk-in-the-park"
+          "en-US": "portfolio-v1"
         },
         "publishDate": {
-          "en-US": "2018-02-22"
+          "en-US": "2018-07-01"
         },
         "heroImage": {
           "en-US": {
             "sys": {
               "type": "Link",
               "linkType": "Asset",
-              "id": "67AMrE3IuAMeWuG08UiyMu"
+              "id": "6vKK6L4XwkkmweCq0YesyG"
             }
           }
         },
         "body": {
-          "en-US": "Ur givin me a spook puggo wow very biscit long bois, such treat vvv. Smol adorable doggo woofer shooberino the neighborhood pupper, stop it fren tungg very hand that feed shibe what a nice floof, sub woofer shoober you are doing me the shock. stop it fren heckin good boys and girls clouds. Noodle horse boof waggy wags fat boi, blep doge. Shoober heck boof very taste wow ruff long woofer length boy, fat boi maximum borkdrive snoot noodle horse. Stop it fren borkf wow such tempt aqua doggo borkf, porgo wow very biscit smol borking doggo with a long snoot for pats. Very jealous pupper the neighborhood pupper what a nice floof you are doin me a concern very taste wow, shooberino shoob most angery pupper I have ever seen.\n\nBlep puggorino blop you are doin me a concern, stop it fren length boy. Long bois doing me a frighten dat tungg tho ur givin me a spook dat tungg tho, borkdrive vvv heckin, many pats borking doggo borkdrive. What a nice floof tungg you are doing me a frighten wrinkler adorable doggo, bork waggy wags. Long doggo heck puggo lotsa pats wow such tempt doggorino boof, borkf you are doing me a frighten pats I am bekom fat.\n\nPuggorino very hand that feed shibe blep he made many woofs borking doggo shoober, doge puggo noodle horse. Wow such tempt borkf much ruin diet snoot wow very biscit shoober heckin angery woofer, thicc shibe puggo heckin good boys and girls. Puggorino shooberino boofers wow such tempt heckin good boys and girls puggorino long water shoob, thicc pupperino doggo doing me a frighten wow very biscit. blop you are doing me a frighten pats. He made many woofs floofs wrinkler fluffer you are doing me the shock, boofers adorable doggo pupper, shooberino long water shoob yapper.  heckin good boys and girls borkdrive. Many pats big ol pupper super chub smol what a nice floof you are doing me a frighten vvv heckin doggo, yapper corgo vvv boofers I am bekom fat waggy wags. shoob. heckin long water shoob vvv. Such treat mlem puggo he made many woofs long doggo very taste wow heckin good boys and girls, shoober you are doing me the shock boof the neighborhood pupper doggo."
+          "en-US": "I wanted something that could have an easy to use headless CMS while being a staticly built site, so I decieded to use [Gatsby](https://Gatsbyjs.com). The primary reason was to allow me the flexability to edit my website's design by detaching the content using [Contentful](https://contentful.com). I used one of the [starters](https://github.com/ryanwiemer/gatsby-starter-gcn) and edited it to fit my personal design choices. \n\nSo far, I've added a second catagory of projects to the original posts. I've adjusted the about section to pull from a specific content type called `person` which I can have as a central repository of my social links, contact info, and a short and long version of my bio. I've also changed or edited most of the visual styling to match components of my favorite portfolios or websites while adding my own interpretation."
         },
         "tags": {
           "en-US": [
@@ -1104,10 +1934,26 @@
               "sys": {
                 "type": "Link",
                 "linkType": "Entry",
-                "id": "3f4RcDO5pSKWwg4as6C0Ko"
+                "id": "3KMYXUOJeMI8qomAMs2kco"
               }
             }
           ]
+        },
+        "requirements": {
+          "en-US": [
+            "Progressive Web App",
+            "Uses React",
+            "Integrates with Contentful",
+            "Integrates with Netlify"
+          ]
+        },
+        "results": {
+          "en-US": [
+            "Success!"
+          ]
+        },
+        "feature": {
+          "en-US": true
         }
       }
     },
@@ -1117,13 +1963,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "0xers3fafzag"
+            "id": "mlafe1ddeja4"
           }
         },
-        "id": "2H1mrgshZeQki8UQ2yGq0s",
+        "id": "6dN1vAPk6k6OewcKaaI26E",
         "type": "Entry",
-        "createdAt": "2018-03-03T22:58:29.147Z",
-        "updatedAt": "2018-03-06T23:12:53.316Z",
+        "createdAt": "2018-07-30T21:17:49.153Z",
+        "updatedAt": "2018-10-08T02:58:36.861Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1135,75 +1981,63 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedCounter": 10,
-        "version": 68,
+        "publishedCounter": 4,
+        "version": 1898,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedVersion": 67,
-        "firstPublishedAt": "2018-03-03T22:58:30.467Z",
-        "publishedAt": "2018-03-06T23:12:53.316Z",
+        "publishedVersion": 1897,
+        "firstPublishedAt": "2018-07-30T21:18:42.722Z",
+        "publishedAt": "2018-10-08T02:58:36.860Z",
         "contentType": {
           "sys": {
             "type": "Link",
             "linkType": "ContentType",
-            "id": "post"
+            "id": "project"
           }
         }
       },
       "fields": {
         "title": {
-          "en-US": "Sailing Around The Bay"
+          "en-US": "FamNet Backend"
+        },
+        "subtitle": {
+          "en-US": "Open Source Project"
         },
         "slug": {
-          "en-US": "sailing-around-the-bay"
+          "en-US": "famnet-backend"
         },
         "publishDate": {
-          "en-US": "2018-02-01"
+          "en-US": "2018-07-01"
         },
         "heroImage": {
           "en-US": {
             "sys": {
               "type": "Link",
               "linkType": "Asset",
-              "id": "uzSxR0f2GyyMsqAumOYS8"
+              "id": "3TYPdB8zu00CeQgOCeWYq6"
             }
           }
         },
         "body": {
-          "en-US": "Shooberino long bois much ruin diet doggo mlem big ol, you are doing me a frighten very good spot borking doggo shibe. Very hand that feed shibe fat boi woofer thicc doge what a nice floof, tungg very hand that feed shibe stop it fren waggy wags. Much ruin diet sub woofer shooberino long bois doing me a frighten doge very good spot clouds, doggorino shibe long woofer blep bork smol borking doggo with a long snoot for pats. Clouds dat tungg tho heckin good boys shoob, the neighborhood pupper most angery pupper I have ever seen. Extremely cuuuuuute ur givin me a spook wow such tempt aqua doggo fat boi doggo, heckin fluffer what a nice floof blep heckin, big ol pupper thicc big ol pupper sub woofer. Extremely cuuuuuute doing me a frighten heckin angery woofer shoob long water shoob, dat tungg tho mlem I am bekom fat. Puggorino very good spot clouds boofers long doggo, shooberino very jealous pupper puggo. Dat tungg tho mlem big ol pupper noodle horse, sub woofer porgo.\n\nmany pats. Puggo very good spot wrinkler heck shooberino, wrinkler clouds. Borkf thicc fat boi wow very biscit very jealous pupper shooberino, dat tungg tho doing me a frighten such treat. Long doggo long woofer sub woofer boof, fat boi. Adorable doggo he made many woofs shibe, shoob. Boof puggo borking doggo boofers, very taste wow very good spot. You are doing me a frighten snoot you are doing me the shock, borkf. Super chub doggorino you are doing me a frighten, he made many woofs. many pats yapper. H*ck thicc ruff you are doin me a concern such treat maximum borkdrive smol, big ol very hand that feed shibe blop pats puggorino pupper, doge pats doggo I am bekom fat most angery pupper I have ever seen. Borking doggo yapper mlem pupper vvv boofers, aqua doggo shibe length boy.\n\nSuper chub heckin super chub heckin lotsa pats yapper, you are doin me a concern very good spot very hand that feed shibe borking doggo. Thicc sub woofer ur givin me a spook pupper aqua doggo puggo, boofers borkdrive vvv. Porgo super chub borkdrive pupperino, heck h*ck, doing me a frighten vvv. Long water shoob such treat what a nice floof wow such tempt long woofer, pupperino stop it fren."
+          "en-US": "This project was my capstone at Bloc where I pursued the problem in my family around communication. I have about 40 family members (and growing!) which often show up at major gatherings with a low-count of about 15 that show up to almost everything. This makes the chain emails often very confusing and difficult to read along; I wanted create a closed private social network (more on why that's a requirement later) to document events as they come up. So, I added an event planner and tracker portion.\n\nThe scope expanded as I began to think of other communication problems my family (and likely others face). Family Recipes, they are often documented on a small sheet of paper in a cookbook. That means once their lost or the family memeber who created or documented it passes, it's gone. I wanted to create a way that family recipes could be documented and searchable within the family. So, I added recipes.\n\nI also realized that some family members are very skeptical of privacy on the internet (which is a valid concern in my opinion). I also realized some family members were concerned about \"blowing up people's inboxes\" with updates via email. This formed a bit of a catch-22 because they were not comfortable enough to share on common social networks or to send out an email for it might be \"bothersome\". I disagree, so, I added a news feed portion with posts and comments.\n\nI also realized along the privacy train-of-thought that a directory would be helpful because consistantly in chain email's year after year we get comments like \"The original didn't get to Jane. I need a good address for her. Please forward to her, someone.\" So, that was the last main feature to be added for the inital version.\n\nAnother nifty feature that I added, was the ability to invite via email however that requires a bit of setup beyond a default deploy. You can view the [FamNet project here](https://github.com/lassiter/FamNet/ \"A link to the project in question, FamNet, hosted on a third-party website called GitHub.\").\n\n*Any family member's name you've read in this article has been replaced with a pseudonym.*"
         },
-        "tags": {
-          "en-US": [
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Entry",
-                "id": "2ndvQV2yIsooo8eMk6YWim"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Entry",
-                "id": "3f4RcDO5pSKWwg4as6C0Ko"
-              }
-            }
-          ]
+        "feature": {
+          "en-US": false
         }
       }
     },
@@ -1213,13 +2047,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "0xers3fafzag"
+            "id": "mlafe1ddeja4"
           }
         },
-        "id": "3wnBmHFsMg8KAOq2kagiks",
+        "id": "166nLUTUOIwEe2yweIsgKi",
         "type": "Entry",
-        "createdAt": "2018-03-03T22:58:29.121Z",
-        "updatedAt": "2018-03-06T23:13:13.448Z",
+        "createdAt": "2018-09-25T01:20:36.457Z",
+        "updatedAt": "2018-09-26T00:09:41.524Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1231,75 +2065,48 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedCounter": 21,
-        "version": 66,
+        "publishedCounter": 2,
+        "version": 982,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedVersion": 65,
-        "firstPublishedAt": "2018-03-03T22:58:31.012Z",
-        "publishedAt": "2018-03-06T23:13:13.448Z",
+        "publishedVersion": 981,
+        "firstPublishedAt": "2018-09-25T01:42:15.953Z",
+        "publishedAt": "2018-09-26T00:09:41.524Z",
         "contentType": {
           "sys": {
             "type": "Link",
             "linkType": "ContentType",
-            "id": "post"
+            "id": "page"
           }
         }
       },
       "fields": {
         "title": {
-          "en-US": "Puppies!"
+          "en-US": "Colophon"
         },
         "slug": {
-          "en-US": "puppies"
-        },
-        "publishDate": {
-          "en-US": "2018-02-16"
-        },
-        "heroImage": {
-          "en-US": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "4AmZcBIrXaCKkyAGAGgoMG"
-            }
-          }
+          "en-US": "colophon"
         },
         "body": {
-          "en-US": "Doggo ipsum doggorino doing me a frighten you are doing me a frighten borkdrive very taste wow ruff, you are doing me the shock much ruin diet many pats wrinkler. Aqua doggo much ruin diet yapper, extremely cuuuuuute. Thicc lotsa pats porgo puggorino yapper, floofs such treat pupper blep, very good spot waggy wags heckin angery woofer. Borkf such treat puggo, heckin good boys and girls. long doggo. Vvv super chub extremely cuuuuuute he made many woofs, wow such tempt borkf. Ruff pats fat boi most angery pupper I have ever seen big ol porgo, borking doggo such treat ur givin me a spook. stop it fren heckin good boys and girls. Shooberino sub woofer very hand that feed shibe the neighborhood pupper pupperino, boofers woofer.\n\nYou are doing me a frighten pupper shibe waggy wags long woofer h*ck, blop bork heckin doge, yapper puggo heckin good boys and girls such treat. Heck doggo wrinkler puggo vvv heckin angery woofer, tungg mlem yapper heckin good boys boof, very taste wow adorable doggo shoober you are doing me a frighten. shibe boof long woofer. Corgo shibe doge you are doing me the shock shooberino stop it fren what a nice floof boof, blep blop pupper adorable doggo pats. What a nice floof lotsa pats vvv porgo, dat tungg tho.\n\nMuch ruin diet fat boi waggy wags puggo tungg, pupperino big ol pupper. shoober. Long woofer borkf borking doggo pats very taste wow pupperino pupper, noodle horse borkf heckin good boys and girls the neighborhood pupper borkf. Waggy wags aqua doggo you are doing me a frighten heckin good boys and girls, the neighborhood pupper. Tungg h*ck ruff wow such tempt ruff shoober, borkf boof what a nice floof."
+          "en-US": "# So, you want to know my tech stack?\n\n- Primary Library: [React.js](https://reactjs.org?utm_source=lassitergregg.com&utm_medium=colophon)\n- Static Site Generator: [Gatsby.js](https://gatsbyjs.org?utm_source=lassitergregg.com&utm_medium=colophon)\n- Content Management System: [Contentful](https://contentful.com?utm_source=lassitergregg.com&utm_medium=colophon)\n- Hosting: [Netlify](https://netlify.com?utm_source=lassitergregg.com&utm_medium=colophon)\n\nI have made a lot of modifications of [Ryan Wiemer's](https://github.com/ryanwiemer) [GCN](https://github.com/ryanwiemer/gatsby-starter-gcn) Gatsby starter theme from the Gatsby website. I chose his theme since it had Contentful already setup with a blog and pages. There are also a lot of smaller libraries and plugins I use but [styled-components](https://styled-components.com/) is one of my favorites.\n\n# Privacy Statement\nI use Segment and feed that data to Google Analytics and FullStory. I collect this information to get metrics of my site's usage and how it is being used. I use FullStory to identify UX issues and bugs. So, if you \"rage click\" (the universal digital signal of frustration), by click on something several times quickly then I get notified. By your use of my website, you agree to the necessary collection of this data. If you've got concerns, email [privacy@lassitergregg.com](mailto:privacy@lassitergregg.com \"Privacy Email for GDPR\")."
         },
-        "tags": {
-          "en-US": [
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Entry",
-                "id": "1aLV4GlZbK8iaAMCOoAm6O"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Entry",
-                "id": "1LvjGKhfn2i4AU2cYOmM4C"
-              }
-            }
-          ]
+        "metaDescription": {
+          "en-US": "The tech stack for Lassiter Gregg."
         }
       }
     }
@@ -1311,13 +2118,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "0xers3fafzag"
+            "id": "mlafe1ddeja4"
           }
         },
-        "id": "67AMrE3IuAMeWuG08UiyMu",
+        "id": "6Od9v3wzLOysiMum0Wkmme",
         "type": "Asset",
-        "createdAt": "2018-03-06T22:36:09.277Z",
-        "updatedAt": "2018-03-06T22:36:31.837Z",
+        "createdAt": "2018-07-18T01:03:20.885Z",
+        "updatedAt": "2018-07-18T01:03:29.574Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1329,44 +2136,47 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
         "publishedCounter": 1,
-        "version": 5,
+        "version": 3,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedVersion": 4,
-        "firstPublishedAt": "2018-03-06T22:36:31.837Z",
-        "publishedAt": "2018-03-06T22:36:31.837Z"
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-07-18T01:03:29.574Z",
+        "publishedAt": "2018-07-18T01:03:29.574Z"
       },
       "fields": {
         "title": {
-          "en-US": "a-walk-in-the-park"
+          "en-US": "Woman with black hat"
+        },
+        "description": {
+          "en-US": "Woman wearing a black hat"
         },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/0xers3fafzag/67AMrE3IuAMeWuG08UiyMu/ff3bebc8603346d37cab1d3cbbcbbf2e/a-walk-in-the-park.jpg",
+            "url": "//images.ctfassets.net/mlafe1ddeja4/6Od9v3wzLOysiMum0Wkmme/604b6fd1e19582d4ed2c167c54f3fc06/cameron-kirby-88711.jpg",
             "details": {
-              "size": 449263,
+              "size": 7316629,
               "image": {
-                "width": 1800,
-                "height": 1201
+                "width": 3000,
+                "height": 2000
               }
             },
-            "fileName": "a-walk-in-the-park.jpg",
+            "fileName": "cameron-kirby-88711.jpg",
             "contentType": "image/jpeg"
           }
         }
@@ -1378,13 +2188,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "0xers3fafzag"
+            "id": "mlafe1ddeja4"
           }
         },
-        "id": "5SWLK89IpGMgOeokmm4C0c",
+        "id": "7orLdboQQowIUs22KAW4U",
         "type": "Asset",
-        "createdAt": "2018-03-06T22:36:36.153Z",
-        "updatedAt": "2018-03-06T22:36:51.998Z",
+        "createdAt": "2018-07-18T01:03:20.939Z",
+        "updatedAt": "2018-07-18T01:03:27.597Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1396,44 +2206,47 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
         "publishedCounter": 1,
-        "version": 5,
+        "version": 3,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedVersion": 4,
-        "firstPublishedAt": "2018-03-06T22:36:51.998Z",
-        "publishedAt": "2018-03-06T22:36:51.998Z"
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-07-18T01:03:27.597Z",
+        "publishedAt": "2018-07-18T01:03:27.597Z"
       },
       "fields": {
         "title": {
-          "en-US": "beach-day"
+          "en-US": "Sparkler"
+        },
+        "description": {
+          "en-US": "John with Sparkler"
         },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/0xers3fafzag/5SWLK89IpGMgOeokmm4C0c/72bb8cd0aae3841956f26e417bf99049/beach-day.jpg",
+            "url": "//images.ctfassets.net/mlafe1ddeja4/7orLdboQQowIUs22KAW4U/d8e10930bd80b260d3a8f500ce9359fb/matt-palmer-254999.jpg",
             "details": {
-              "size": 391011,
+              "size": 2293094,
               "image": {
-                "width": 1800,
-                "height": 1200
+                "width": 3000,
+                "height": 2000
               }
             },
-            "fileName": "beach-day.jpg",
+            "fileName": "matt-palmer-254999.jpg",
             "contentType": "image/jpeg"
           }
         }
@@ -1445,13 +2258,153 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "0xers3fafzag"
+            "id": "mlafe1ddeja4"
+          }
+        },
+        "id": "4NzwDSDlGECGIiokKomsyI",
+        "type": "Asset",
+        "createdAt": "2018-07-18T01:03:20.975Z",
+        "updatedAt": "2018-07-18T01:03:28.977Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-07-18T01:03:28.977Z",
+        "publishedAt": "2018-07-18T01:03:28.977Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "City"
+        },
+        "description": {
+          "en-US": "City pictured from the sky"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/mlafe1ddeja4/4NzwDSDlGECGIiokKomsyI/901f01a7cc553d4ad721e0d1ed2d913e/denys-nevozhai-100695.jpg",
+            "details": {
+              "size": 15736986,
+              "image": {
+                "width": 3992,
+                "height": 2992
+              }
+            },
+            "fileName": "denys-nevozhai-100695.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "mlafe1ddeja4"
+          }
+        },
+        "id": "4shwYI3POEGkw0Eg6kcyaQ",
+        "type": "Asset",
+        "createdAt": "2018-07-18T01:03:21.036Z",
+        "updatedAt": "2018-07-18T01:03:27.980Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-07-18T01:03:27.980Z",
+        "publishedAt": "2018-07-18T01:03:27.980Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Man in the fields"
+        },
+        "description": {
+          "en-US": "Tattooed man walking in a field"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/mlafe1ddeja4/4shwYI3POEGkw0Eg6kcyaQ/56836bf8279a3d79d867736b6f153686/felix-russell-saw-112140.jpg",
+            "details": {
+              "size": 4539181,
+              "image": {
+                "width": 2500,
+                "height": 1667
+              }
+            },
+            "fileName": "felix-russell-saw-112140.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "mlafe1ddeja4"
           }
         },
         "id": "4AmZcBIrXaCKkyAGAGgoMG",
         "type": "Asset",
-        "createdAt": "2018-03-06T22:36:55.405Z",
-        "updatedAt": "2018-03-06T22:37:08.069Z",
+        "createdAt": "2018-07-18T02:08:59.734Z",
+        "updatedAt": "2018-07-18T02:09:06.849Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1463,28 +2416,28 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
         "publishedCounter": 1,
-        "version": 5,
+        "version": 3,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedVersion": 4,
-        "firstPublishedAt": "2018-03-06T22:37:08.069Z",
-        "publishedAt": "2018-03-06T22:37:08.069Z"
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-07-18T02:09:06.849Z",
+        "publishedAt": "2018-07-18T02:09:06.849Z"
       },
       "fields": {
         "title": {
@@ -1492,7 +2445,7 @@
         },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/0xers3fafzag/4AmZcBIrXaCKkyAGAGgoMG/8ca8dabe304f9c19acb7262f435835d9/puppies.jpg",
+            "url": "//images.ctfassets.net/mlafe1ddeja4/4AmZcBIrXaCKkyAGAGgoMG/ef2f337c461b6515798089714d718596/puppies.jpg",
             "details": {
               "size": 367559,
               "image": {
@@ -1512,13 +2465,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "0xers3fafzag"
+            "id": "mlafe1ddeja4"
           }
         },
         "id": "uzSxR0f2GyyMsqAumOYS8",
         "type": "Asset",
-        "createdAt": "2018-03-06T22:37:14.427Z",
-        "updatedAt": "2018-03-06T22:37:27.422Z",
+        "createdAt": "2018-07-18T02:08:59.745Z",
+        "updatedAt": "2018-07-18T02:09:06.388Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1530,28 +2483,28 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
         "publishedCounter": 1,
-        "version": 5,
+        "version": 3,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedVersion": 4,
-        "firstPublishedAt": "2018-03-06T22:37:27.422Z",
-        "publishedAt": "2018-03-06T22:37:27.422Z"
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-07-18T02:09:06.388Z",
+        "publishedAt": "2018-07-18T02:09:06.388Z"
       },
       "fields": {
         "title": {
@@ -1559,7 +2512,7 @@
         },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/0xers3fafzag/uzSxR0f2GyyMsqAumOYS8/b36d5b2cdcc927eedf23f1e0426af9fc/sailing-around-the-bay.jpg",
+            "url": "//images.ctfassets.net/mlafe1ddeja4/uzSxR0f2GyyMsqAumOYS8/02480939594af355bad183760de2cac9/sailing-around-the-bay.jpg",
             "details": {
               "size": 270419,
               "image": {
@@ -1579,13 +2532,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "0xers3fafzag"
+            "id": "mlafe1ddeja4"
           }
         },
         "id": "1yyfw0vtIY2qEQqkKYMGwK",
         "type": "Asset",
-        "createdAt": "2018-03-06T22:42:29.283Z",
-        "updatedAt": "2018-03-06T22:57:50.213Z",
+        "createdAt": "2018-07-18T02:08:59.757Z",
+        "updatedAt": "2018-07-18T02:09:05.889Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1597,28 +2550,28 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedCounter": 3,
-        "version": 13,
+        "publishedCounter": 1,
+        "version": 3,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "publishedVersion": 12,
-        "firstPublishedAt": "2018-03-06T22:42:46.987Z",
-        "publishedAt": "2018-03-06T22:57:50.213Z"
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-07-18T02:09:05.889Z",
+        "publishedAt": "2018-07-18T02:09:05.889Z"
       },
       "fields": {
         "title": {
@@ -1626,7 +2579,7 @@
         },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/0xers3fafzag/1yyfw0vtIY2qEQqkKYMGwK/0b03e5f3556489a2079f01a8dc600ce5/about.jpg",
+            "url": "//images.ctfassets.net/mlafe1ddeja4/1yyfw0vtIY2qEQqkKYMGwK/bbe313e7140cddb3b0c1e95c0b795240/about.jpg",
             "details": {
               "size": 117778,
               "image": {
@@ -1636,6 +2589,350 @@
             },
             "fileName": "about.jpg",
             "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "mlafe1ddeja4"
+          }
+        },
+        "id": "5SWLK89IpGMgOeokmm4C0c",
+        "type": "Asset",
+        "createdAt": "2018-07-18T02:08:59.758Z",
+        "updatedAt": "2018-07-18T02:09:07.179Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-07-18T02:09:07.179Z",
+        "publishedAt": "2018-07-18T02:09:07.179Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "beach-day"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/mlafe1ddeja4/5SWLK89IpGMgOeokmm4C0c/075f537c6984a8f6504fd7bbf31ff45a/beach-day.jpg",
+            "details": {
+              "size": 391011,
+              "image": {
+                "width": 1800,
+                "height": 1200
+              }
+            },
+            "fileName": "beach-day.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "mlafe1ddeja4"
+          }
+        },
+        "id": "67AMrE3IuAMeWuG08UiyMu",
+        "type": "Asset",
+        "createdAt": "2018-07-18T02:08:59.759Z",
+        "updatedAt": "2018-07-18T02:09:05.531Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-07-18T02:09:05.531Z",
+        "publishedAt": "2018-07-18T02:09:05.531Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "a-walk-in-the-park"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/mlafe1ddeja4/67AMrE3IuAMeWuG08UiyMu/b433c9d093c5b97cc12fb81dc19f3df5/a-walk-in-the-park.jpg",
+            "details": {
+              "size": 449263,
+              "image": {
+                "width": 1800,
+                "height": 1201
+              }
+            },
+            "fileName": "a-walk-in-the-park.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "mlafe1ddeja4"
+          }
+        },
+        "id": "40R6A6RhVumSaOQWISc2m2",
+        "type": "Asset",
+        "createdAt": "2018-07-30T23:49:25.096Z",
+        "updatedAt": "2018-07-30T23:50:49.375Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 34,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedVersion": 33,
+        "firstPublishedAt": "2018-07-30T23:50:49.375Z",
+        "publishedAt": "2018-07-30T23:50:49.375Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Lassiter Gregg"
+        },
+        "description": {
+          "en-US": "Photograph of Lassiter Gregg"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/mlafe1ddeja4/40R6A6RhVumSaOQWISc2m2/fcdc94438a94712fbfcc7c601761cfc9/lassiter-gregg.jpg",
+            "details": {
+              "size": 122449,
+              "image": {
+                "width": 1000,
+                "height": 1000
+              }
+            },
+            "fileName": "lassiter-gregg.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "mlafe1ddeja4"
+          }
+        },
+        "id": "6vKK6L4XwkkmweCq0YesyG",
+        "type": "Asset",
+        "createdAt": "2018-10-08T02:25:45.431Z",
+        "updatedAt": "2018-10-08T02:34:57.035Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 32,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedVersion": 31,
+        "firstPublishedAt": "2018-10-08T02:26:43.574Z",
+        "publishedAt": "2018-10-08T02:34:57.035Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Portfolio"
+        },
+        "description": {
+          "en-US": "Screenshot of my portfolio"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/mlafe1ddeja4/6vKK6L4XwkkmweCq0YesyG/99aac46202e58eaae2e3f96f0a0894b2/Screen_Shot_2018-10-07_at_9.00.49_PM.png",
+            "details": {
+              "size": 413707,
+              "image": {
+                "width": 1356,
+                "height": 904
+              }
+            },
+            "fileName": "Screen_Shot_2018-10-07_at_9.00.49_PM.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "mlafe1ddeja4"
+          }
+        },
+        "id": "3TYPdB8zu00CeQgOCeWYq6",
+        "type": "Asset",
+        "createdAt": "2018-10-08T02:37:54.367Z",
+        "updatedAt": "2018-10-08T02:38:53.989Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 27,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "publishedVersion": 26,
+        "firstPublishedAt": "2018-10-08T02:38:53.989Z",
+        "publishedAt": "2018-10-08T02:38:53.989Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "FamNet Code"
+        },
+        "description": {
+          "en-US": "Example of Code for FamNet"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/mlafe1ddeja4/3TYPdB8zu00CeQgOCeWYq6/08c11e72399e564474adf40c211865ee/Screen_Shot_2018-10-07_at_9.37.22_PM.png",
+            "details": {
+              "size": 301735,
+              "image": {
+                "width": 1252,
+                "height": 835
+              }
+            },
+            "fileName": "Screen_Shot_2018-10-07_at_9.37.22_PM.png",
+            "contentType": "image/png"
           }
         }
       }
@@ -1652,35 +2949,94 @@
       "optional": false,
       "sys": {
         "type": "Locale",
-        "id": "1lOW97Vd9iQj8nT5dNMYZ4",
+        "id": "3SmhKnxFrUNGBHdkVhw7bP",
         "version": 1,
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "0xers3fafzag"
+            "id": "mlafe1ddeja4"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master"
           }
         },
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "createdAt": "2018-03-03T22:50:20Z",
+        "createdAt": "2016-08-12T15:08:06Z",
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "updatedAt": "2018-03-03T22:50:20Z"
+        "updatedAt": "2018-07-18T02:08:53Z"
       }
     }
   ],
   "webhooks": [
+    {
+      "name": "Netlify Build Webbook for Post Publish/Unpublish/Archive/Delete",
+      "url": "https://api.netlify.com/build_hooks/5bbabbd8dd28ef48d33a49cb",
+      "httpBasicUsername": null,
+      "topics": [
+        "Entry.archive",
+        "Entry.unarchive",
+        "Entry.publish",
+        "Entry.unpublish",
+        "Entry.delete"
+      ],
+      "filters": [
+        {
+          "equals": [
+            {
+              "doc": "sys.contentType.sys.id"
+            },
+            "post"
+          ]
+        }
+      ],
+      "transformation": {},
+      "sys": {
+        "type": "WebhookDefinition",
+        "id": "7hH9uswaLwG7OZnDUYIzdM",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "mlafe1ddeja4"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "createdAt": "2018-10-08T02:08:13Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
+          }
+        },
+        "updatedAt": "2018-10-08T02:08:13Z"
+      },
+      "headers": []
+    }
   ],
   "roles": [
     {
@@ -1728,37 +3084,37 @@
         "ContentModel": [
           "read"
         ],
-        "Settings": [
-        ],
-        "ContentDelivery": "all"
+        "Settings": [],
+        "ContentDelivery": "all",
+        "Environments": []
       },
       "sys": {
         "type": "Role",
-        "id": "1lDj811UwMMPuqkZ5ojnaq",
+        "id": "3SxAO9MbDcczFk4aJZz3br",
         "version": 0,
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "0xers3fafzag"
+            "id": "mlafe1ddeja4"
           }
         },
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "createdAt": "2018-03-03T22:50:19Z",
+        "createdAt": "2016-08-12T15:08:06Z",
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "updatedAt": "2018-03-03T22:50:19Z"
+        "updatedAt": "2016-08-12T15:08:06Z"
       }
     },
     {
@@ -1802,38 +3158,37 @@
         "ContentModel": [
           "read"
         ],
-        "Settings": [
-        ],
-        "ContentDelivery": [
-        ]
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": []
       },
       "sys": {
         "type": "Role",
-        "id": "1lDSbBytQD4rWV6PAg7OUa",
+        "id": "3SFfJGuKb1Qg97nMPJTiAN",
         "version": 0,
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "0xers3fafzag"
+            "id": "mlafe1ddeja4"
           }
         },
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "createdAt": "2018-03-03T22:50:19Z",
+        "createdAt": "2016-08-12T15:08:06Z",
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "6bursH6S5NNRZVuRrO7oVO"
+            "id": "40qYgLUMZMjfFa1FPi6dsJ"
           }
         },
-        "updatedAt": "2018-03-03T22:50:19Z"
+        "updatedAt": "2016-08-12T15:08:06Z"
       }
     }
   ]

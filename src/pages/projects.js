@@ -47,7 +47,7 @@ query projectIndexQuery {
 
           heroImage {
             title
-            sizes(maxWidth: 550, maxHeight: 350) {
+            sizes(maxWidth: 1200) {
               ...GatsbyContentfulSizes_withWebp_noBase64
             }
           }
