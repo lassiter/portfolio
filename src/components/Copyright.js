@@ -5,12 +5,12 @@ class Copyright extends React.Component {
 
   render() {
     const dt = new Date();
-    const current_year = dt.getFullYear()
+    const currentYear = dt.getFullYear()
     
-    if (current_year == "2018") {
+    if (currentYear === 2018) {
       return <p>© Lassiter Gregg, 2018</p>
     } else {
-      return <p>{`© Lassiter Gregg, 2018-${current_year}`}</p>
+      return <p>{`© Lassiter Gregg, 2018-${currentYear}`}</p>
     }
   }
 }
