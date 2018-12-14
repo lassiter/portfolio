@@ -17,6 +17,7 @@ const Template = ({ children }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href={favicon} />
         <meta name="description" content={config.siteDescription} />
+        <meta name="image" content={config.shareImage} />
         <meta property="og:title" content={config.siteTitle} />
         <meta property="og:image" content={config.shareImage} />
         <meta property="og:description" content={config.siteDescription} />
