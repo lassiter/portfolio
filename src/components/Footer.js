@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Wrapper = styled.footer`
   height: 45px;
+  width: 98%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -32,6 +33,10 @@ const Item = styled.li`
   p {
     font-weight: 600;
     color: ${props => props.theme.colors.base};
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
   } 
   a {
     font-weight: 600;
