@@ -18,6 +18,8 @@ const Template = ({ children }) => {
         <link rel="icon" href={favicon} />
         <meta name="description" content={config.siteDescription} />
         <meta property="og:title" content={config.siteTitle} />
+        <meta property="og:image" content={config.shareImage} />
+        <meta property="og:description" content={config.siteDescription} />
         <meta property="og:url" content={config.siteUrl} />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
